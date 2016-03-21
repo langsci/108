@@ -4,7 +4,6 @@ Sascha Wolfer\affiliation{Institute for the German Language, Mannheim}
 }
 % \chapterDOI{} %will be filled in at production
 
-\epigram{Change epigram in chapters/01.tex or remove it there }
 
 \abstract{We present a study using eye-tracking-while-reading data from participants reading German jurisdictional texts. We are particularly interested in nominalisations. It can be shown that nominalisations are read significantly longer than other nouns and that this effect is quite strong. Furthermore, the results suggest that nouns are read faster in reformulated texts. In the reformulations, nominalisations were transformed into verbal structures. Reformulations did not lead to increased processing times of verbal constructions but reformulated texts were read faster overall. Where appropriate, results are compared to a previous study of \citet{HansenEtAl2006} using the same texts but other methodology and statistical analysis. 
 }
@@ -55,13 +54,13 @@ The Freiburg Legalese Reading Corpus consists of two main parts: (1) A sub-corpu
 
 
 \begin{table}
-\begin{tabular}{llll} & Nominalisations & Complex NPs & Syntax\\
+\begin{tabularx}{\textwidth}{XXXX} & Nominalisations & Complex NPs & Syntax\\
 \lsptoprule
- Original excerpts & 10 texts, 200 tokens & 10 texts, 303 tokens & 10 texts, 434 tokens\\
- Moderate reformulations & 10 texts, 214 tokens & 10 texts, 317 tokens & 10 texts, 439 tokens\\
- Strong reformulations & 10 texts, 217 tokens & 10 texts, 334 tokens & 10 texts, 440 tokens\\
+ Original excerpts & 10 texts\newline  200 tokens & 10 texts\newline  303 tokens & 10 texts\newline  434 tokens\\ \\
+ \raggedright Moderate reformulations & 10 texts\newline  214 tokens & 10 texts\newline  317 tokens & 10 texts\newline  439 tokens\\ \\
+\raggedright  Strong reformulations & 10 texts\newline  217 tokens & 10 texts\newline  334 tokens & 10 texts\newline  440 tokens\\
 \lspbottomrule
-\end{tabular}
+\end{tabularx}
 \caption{Corpus design of the corpus part with the original excerpts and reformulations. Total token counts of the 10 texts in each cell are also shown. Column names are the three complexity types Hansen et al. (2006) used to select the original excerpts.}
 \label{tab:1}
 \end{table}
@@ -107,16 +106,17 @@ We will then go into detail using the part of the reading corpus that contains e
 Each research question posed above needs a specific subset of the reading corpus to be answered. The data subsets associated with the respective research questions can be found in the second column of 2.
 
 \begin{table}
-\begin{tabular}{lll}
+\begin{tabularx}{\textwidth}{XXX}
 \lsptoprule
  Research question & Data subset & Hypothesis\\
- Are nominalisations harder to process than normal nouns? & All nouns (including nominalisations) in the FLRC & Nominalisations are read longer during first-pass.\\
- How pronounced is the nominalisation effect compared to other classes of words? & All words in the FLRC & Compared to other word classes, the nominalisation effect is rather large.\\
- Are nouns read faster after nominalisations have been reformulated? & All nouns in complexity type nominalisations & Nouns are read faster after nominalisations have been transferred to verbal structures.\\
- Do reformulations shift complexity to verbal structures? & Verbs and participles in complexity type nominalisations & No observable effect\\
+\midrule 
+ Are nominalisations harder to process than normal nouns? & All nouns (including nominalisations) in the FLRC & Nominalisations are read longer during first-pass.\\ \\
+ How pronounced is the nominalisation effect compared to other classes of words? & All words in the FLRC & Compared to other word classes, the nominalisation effect is rather large.\\ \\
+ Are nouns read faster after nominalisations have been reformulated? & All nouns in complexity type nominalisations & Nouns are read faster after nominalisations have been transferred to verbal structures.\\ \\
+ Do reformulations shift complexity to verbal structures? & Verbs and participles in complexity type nominalisations & No observable effect\\ \\
  Does overall text processing benefit from the reformulations? & Whole texts of complexity type nominalisations & Reformulated texts are processed faster than original excerpts.\\
 \lspbottomrule
-\end{tabular}
+\end{tabularx}
 \caption{Research questions, selected data subsets, and hypotheses for the analyses presented in this chapter}
 \label{tab:2}
 \end{table}
@@ -147,8 +147,10 @@ In this section, the research questions and associated hypotheses are categorise
 For the first research questions, all nouns in the reading corpus were selected. Each of those nouns is associated with the information if it is a nominalisation or not. This is the only predictor we include into our model as a fixed effect. We calculated linear mixed-effects models for the reading time variables first-pass reading time, total reading time and regression path durations. Those reading time variables were corrected by the baseline model procedure introduced in \sectref{sec:3.1.} For skipping probability and the probability that a regressive saccade is launched upon encountering the noun, logistic mixed regression models were calculated. These models are better suited for binary outcome variables (cf. Jaeger, 2008).
 
 \begin{table}
-\begin{tabular}{llll} & Estimate & Standard Error & \textit{t}/\textit{z} value\\
+\begin{tabularx}{\textwidth}{Xrrr}
 \lsptoprule
+ & Estimate & Standard Error & \textit{t}/\textit{z} value\\
+\midrule 
  First-pass reading times & 0.063 & 0.012 & 5.243\\
  Total reading times & 0.131 & 0.015 & 8.911\\
  Regression path durations & 0.073 & 0.020 & 3.615\\
@@ -157,7 +159,7 @@ For the first research questions, all nouns in the reading corpus were selected.
  Probability that a regressive saccade is launched & 0.059 & 0.035 & 1.662\\
 \textit{p} = 0.10\\
 \lspbottomrule
-\end{tabular}
+\end{tabularx}
 \caption{Model parameters (estimate, standard error and t value) for the fixed effect of a noun being a nominalisation. The five models for the different reading variables are in rows. P values are only available for the logistic mixed regression models for skipping probability and the probability of a regressive saccade (last two rows). For all other models, an absolute t value above 2 strongly indicates significance. The sign of the estimate indicates the effect direction.}
 \label{tab:3}
 \end{table}
@@ -183,13 +185,14 @@ The next question is if processing complexity shifts to verbs and participles wh
 
 To answer the last question, we take the analyses to the text level and compare the reading times of the different reformulation versions of the texts from the complexity type nominalisations. Indeed, as 4 shows, the mean reading time per text is getting lower as texts are reformulated. However, the noise (standard deviations, second column) is also very high here. Apart from that, we also have to take text length into account, because it is not that big of a surprise that texts are read faster if they are shorter. Indeed, they get a little shorter in average as the third column of 4 shows.
 \begin{table}
-\begin{tabular}{llll} & Mean text reading time & Standard deviation & Mean text length\\
+\begin{tabularx}{\textwidth}{lXXX} 
+& Mean text\newline reading time & Standard \newline deviation & Mean text \newline length\\
 \lsptoprule
  Original excerpts & 9489 ms & 7607 ms & 149 characters\\
  Moderate reformulations & 8487 ms & 7748 ms & 144 characters\\
  Strong reformulations & 8018 ms & 6193 ms & 143 characters\\
 \lspbottomrule
-\end{tabular}
+\end{tabularx}
 \caption{Mean text reading times, standard deviations and mean text lengths for text from the complexity type nominalisations}
 \label{tab:4}
 \end{table}

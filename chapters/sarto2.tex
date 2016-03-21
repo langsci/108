@@ -354,9 +354,10 @@ As for one of our main objectives, we found a significant difference in the tota
 
 \begin{table}
 \begin{tabular}{lllllllllll}
-\lsptoprule
-\hhline{~----------} &  & {\bfseries     MT} & {\bfseries ~} & {\bfseries ~} & \bfseries ~ & \multicolumn{3}{l}{\bfseries                                IMT} & {\bfseries ~} & \bfseries ~\\
+\lsptoprule 
+&&\multicolumn{4}{c}{MT} && \multicolumn{4}{c}{IMT} \\
 Participants & Condition & Text & CE & PE & HE & Condition & Text & CE & PE & HE\\
+\midrule
 P02 & MT & PR & 0 & 7 & 0 & IMT & HY & 9 & 18 & 0\\
 P03 & MT & HY & 13 & 20 & 1 & IMT & PR & 3 & 14 & 0\\
 P04 & MT & PR & 15 & 35 & 0 & IMT & HY & 31 & 28 & 2\\
@@ -376,15 +377,17 @@ P21 & MT & PR & 2 & 18 & 0 & IMT & HY & 22 & 35 & 0\\
 \lspbottomrule
 \end{tabular}
 \caption{Number of edits per participant concerning conceptual, procedural and hybrid encodings in MT and IMT conditions.}
+\todo[inline]{The condition columns can probably be deleted as this information is already present in the headers}
 \label{tab:1}
 \end{table}
 
 \begin{table}
-\begin{tabular}{llllll}
+\begin{tabular}{rllcrll}
 \lsptoprule
-{~} & {MT} & ~ & {~} & {IMT} & ~\\
-Text & CE & PE & Text & CE & PE\\
-PR/HY & 131 & 299 & HY/PR & 193 & 348\\
+{~} & {MT} & ~ && {~} & {IMT} & ~\\
+Text & CE & PE && Text & CE & PE\\
+\midrule
+PR/HY & 131 & 299 && HY/PR & 193 & 348\\
 \lspbottomrule
 \end{tabular}
 \caption{The total number of edits concerning conceptual and procedural encodings in MT and IMT conditions.}
@@ -395,18 +398,20 @@ PR/HY & 131 & 299 & HY/PR & 193 & 348\\
 On the one hand, we have found a proportion of less than 30\% of CE edits against more than 70\% of PE edits in the MT condition. Furthermore, in the IMT condition we have found that CE edits corresponded to more than 30\% of the total number of edits while PE edits accounted for a little less than 70\% of the total number of edits, which indicates a higher proportion for PE against CE, as shown in table 3. 
 
 \begin{table}
-\begin{tabular}{lllll}
+\begin{tabular}{lrrrr}
 \lsptoprule
 ~ & \multicolumn{4}{l}{Texts mixed}\\
-Conditions & \multicolumn{2}{l}{MT (16)} & \multicolumn{2}{l}{IMT (16)}\\
+Conditions & \multicolumn{2}{c}{MT (16)} & \multicolumn{2}{c}{IMT (16)}\\
 Encodings & {CE } & PE & {CE } & PE\\
+\midrule
 Total & {91} & 295 & {224} & 392\\
-\% & {24\%} & 76\% & {36\%} & 64\%\\
+\% & {24\%} & 76\% & {36\%} & 64\%\\\\
 results & \multicolumn{2}{l}{\textit{t}(15) = -7.38} & \multicolumn{2}{l}{\textit{t}(15) = -7.21}\\
 ~ & \multicolumn{2}{l}{\textit{p} {\textless} .01} & \multicolumn{2}{l}{\textit{p} {\textless} .00001}\\
 \lspbottomrule
 \end{tabular}
 \caption{Reporting the total number of edits of CE and PE in each condition}
+\todo[inline]{suggest using "absolute" and "relative". Could "t(15)" go to the first column?}
 \label{tab:3}
 \end{table}
 
@@ -439,6 +444,7 @@ Interestingly, when comparing average fixation duration (as it is demonstrated i
  \includegraphics[width=\textwidth]{figures/Sarto7.png}
  \caption{Average fixation duration in MT and IMT (in milliseconds)}
  \label{fig:7}
+  \todo[inline]{the resolution of this graphic is way too low for printing}
 \end{figure} 
 
 
@@ -447,7 +453,8 @@ With regard to reading behaviour in IMT workbench, \tabref{tab:4} presents inter
 \begin{table}
 \begin{tabular}{lll}
 \lsptoprule
-\hhline{~--} & Mean & Median\\
+& Mean & Median\\
+\midrule
 MT (Total) & 578,74 & 400\\
 IMT (Total) & 369,97 & 266\\
 \lspbottomrule
@@ -467,12 +474,12 @@ Finally, we calculate the average fixation duration per edit, that is, the avera
 \begin{table}
 \begin{tabular}{lll}
 \lsptoprule
-\hhline{~--} & \multicolumn{2}{l}{\bfseries                  Total}\\
-\bfseries (ms) & {\bfseries MT(16)} & \bfseries IMT(16)\\
-\bfseries Average per unit of edits & {29} & 11\\
-\bfseries Results & \multicolumn{2}{l}{\textit{t}(15) = -4.80}\\
-& \multicolumn{2}{l}{ \textit{p} {\textless} .001}\\
-\hhline{~--}
+ & \multicolumn{2}{c}{Total}\\
+(ms) & {  MT(16)} &   IMT(16)\\
+\midrule
+Average per unit of edits & {29} & 11\\
+Results & \multicolumn{2}{l}{\textit{t}(15) = -4.80}\\
+& \multicolumn{2}{l}{ \textit{p} {\textless} .001}\\ 
 \lspbottomrule
 \end{tabular}
 \caption{Average fixation duration per edit by condition}

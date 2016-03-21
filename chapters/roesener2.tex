@@ -18,11 +18,11 @@ Many research facilities and institutions contemplate the idea of setting up an 
 In this paper I will try to approach the various challenging issues one faces in planning, designing and implementing a contemporary usability lab from various points of view, showing the dos and don'ts in the process of setting up such a laboratory. Following the introduction, I will give a brief overview of modern eye tracking equipment available on the market. Several eye tracking systems are presented as well as additional devices necessary for the task. Connected with this, I shall discuss some of the main issues important for the final decision regarding which system to choose. This is then followed by a description of possible design concepts for usability laboratories in general. Finally, I will describe the difficulties and problems in using an eye tracking laboratory for usability studies. The paper ends with a presentation of the existing usability laboratory at Flensburg University of Applied Sciences and at the end some conclusions are drawn and future possibilities are discussed.
 
 
-In order to get a common and clear understanding of what 'usability' means, it is first of all necessary to take a closer look on the various existing definitions. Standard 9241 from the International Organization for Standardization (ISO) defines 'usability' as {\textquotedbl}The effectiveness, efficiency and satisfaction with which specified users achieve specified goals in particular environments.{\textquotedbl} (ISO 9241 1992). Effectiveness, efficiency and satisfaction are then further defined in the standard as: 
+In order to get a common and clear understanding of what 'usability' means, it is first of all necessary to take a closer look on the various existing definitions. Standard 9241 from the International Organization for Standardization (ISO) defines 'usability' as "The effectiveness, efficiency and satisfaction with which specified users achieve specified goals in particular environments." (ISO 9241 1992). Effectiveness, efficiency and satisfaction are then further defined in the standard as: 
 
 
 \begin{quote}
-\textbf{{\textquotedbl}effectiveness: }the accuracy and completeness with which specified users can achieve specified goals in particular environments
+\textbf{effectiveness: }the accuracy and completeness with which specified users can achieve specified goals in particular environments
 \end{quote}
 
 \begin{quote}
@@ -30,13 +30,13 @@ In order to get a common and clear understanding of what 'usability' means, it i
 \end{quote}
 
 \begin{quote}
-\textbf{satisfaction:} the comfort and acceptability of the work system to its users and other people affected by its use{\textquotedbl}
+\textbf{satisfaction:} the comfort and acceptability of the work system to its users and other people affected by its use
 \end{quote}
 
-In 1992, the multi-part standard was named {\textquotedbl}Ergonomic requirements for office work with visual display terminals{\textquotedbl}. From 2006 on, the standards were retitled to the more generic {\textquotedbl}Ergonomics of Human System Interaction{\textquotedbl}. Nevertheless, it is obvious that the focus of this definition is clearly only usability in connection with software applications. In 1998, Jakob Nielsen gave a wider definition of usability:
+In 1992, the multi-part standard was named "Ergonomic requirements for office work with visual display terminals". From 2006 on, the standards were retitled to the more generic "Ergonomics of Human System Interaction". Nevertheless, it is obvious that the focus of this definition is clearly only usability in connection with software applications. In 1998, Jakob Nielsen gave a wider definition of usability:
 
 \begin{quote}
-{\textquotedbl}Usability is the measure of the quality of the user experience when interacting with something -{}- whether a Web site, a traditional software application, or any other device the user can operate in some way or another.{\textquotedbl}\footnote{ \citet{Nielsen1998}; cited in \citet{Eichinger1999}.}
+Usability is the measure of the quality of the user experience when interacting with something -{}- whether a Web site, a traditional software application, or any other device the user can operate in some way or another.\footnote{ \citet{Nielsen1998}; cited in \citet{Eichinger1999}.}
 \end{quote}
 
 This definition includes, in addition to the classical software application, also 'any other device', i.e. to my mind also objects, tools or any other sort of device. 
@@ -54,10 +54,10 @@ I will use this broader definition as a basis in order to develop the design of 
 
 \subsection{Motivation}
 
-Figure \ref{fig:1} shows the results of a survey by the German TNS Emnid opinion in 2014. 1000 individuals of over 14 years of age were asked the question {\textquotedbl}Have you ever left an online shop because the user interface was too difficult?{\textquotedbl}. Possible answers were {\textquotedbl}yes{\textquotedbl}, {\textquotedbl}no{\textquotedbl} or {\textquotedbl}I do not use online shops{\textquotedbl}.
+Figure \ref{fig:1} shows the results of a survey by the German TNS Emnid opinion in 2014. 1000 individuals of over 14 years of age were asked the question "Have you ever left an online shop because the user interface was too difficult?". Possible answers were "yes", "no" or "I do not use online shops".
 
 
-From the 92\% of the web users who do use online shops, more than 50\% consider web shops too complicated sometimes. That means that more than 50\% of the web users are not satisfied with the quality and thus the usability of online shops. In contrast, in \ref{fig:2} the results of a survey concerning the use of customer-oriented instruments for online retailers are shown. The participants were asked: {\textquotedbl}Which of the following customer-oriented instruments do you use or do you plan to use to improve the sales of your online shop?{\textquotedbl} The given list contained the following instruments:
+From the 92\% of the web users who do use online shops, more than 50\% consider web shops too complicated sometimes. That means that more than 50\% of the web users are not satisfied with the quality and thus the usability of online shops. In contrast, in \ref{fig:2} the results of a survey concerning the use of customer-oriented instruments for online retailers are shown. The participants were asked: "Which of the following customer-oriented instruments do you use or do you plan to use to improve the sales of your online shop?" The given list contained the following instruments:
 
 
 \begin{itemize}
@@ -67,9 +67,9 @@ From the 92\% of the web users who do use online shops, more than 50\% consider 
 \item usability evaluation by external vendors 
 \end{itemize}
 
-Possible answers were {\textquotedbl}I use this{\textquotedbl}, {\textquotedbl}I plan to use this{\textquotedbl} and {\textquotedbl}Not planned{\textquotedbl}. The survey was conducted by ibi research University Regensburg GmbH. 
+Possible answers were "I use this", "I plan to use this" and "Not planned". The survey was conducted by ibi research University Regensburg GmbH. 
 
-\begin{figure}[h]
+\begin{figure}
  \includegraphics[width=\textwidth]{figures/Roesener2.png}
  \caption{Instruments to improve the sales of online shops (Source: ibi research University Regensburg GmbH 2014)}
  \label{fig:2}
@@ -81,7 +81,7 @@ The results show clearly, that despite the problem shown in Figure \ref{fig:1}, 
 
 \subsection{Methods and techniques}
 
-To achieve the above mentioned goal {\textquotedbl}to measure the quality of the user experience{\textquotedbl}, various research methods and techniques exist:
+To achieve the above mentioned goal "to measure the quality of the user experience", various research methods and techniques exist:
 
 \begin{itemize}
 \item observation
@@ -108,7 +108,7 @@ It was thus very clear that eye tracking should serve two purposes in the future
 
 \subsection{Eye tracking systems – spoilt for choice }
 
-The first problem to deal with when implementing a contemporary usability laboratory is the manifold variety of technical equipment, especially concerning the eye tracking equipment. Holmqvist states that {\textquotedbl}in 2009 we found 23 companies selling video based eye tracking systems{\textquotedbl} (Holmqvist/Nyström 2011, 12). In my view, however, there are only a small number of traditional manufacturers providing equipment for academic research\footnote{ This selection is clearly subjective. However, it is definitely not the intention of the author to favour certain manufacturers. The selection is based on the author’s experience and on discussions with colleagues working in other existing language and translation research eye tracking and/or usability laboratories. Thus, the list makes no claims of being complete.}: 
+The first problem to deal with when implementing a contemporary usability laboratory is the manifold variety of technical equipment, especially concerning the eye tracking equipment. Holmqvist states that "in 2009 we found 23 companies selling video based eye tracking systems" (Holmqvist/Nyström 2011, 12). In my view, however, there are only a small number of traditional manufacturers providing equipment for academic research\footnote{ This selection is clearly subjective. However, it is definitely not the intention of the author to favour certain manufacturers. The selection is based on the author’s experience and on discussions with colleagues working in other existing language and translation research eye tracking and/or usability laboratories. Thus, the list makes no claims of being complete.}: 
 
 \begin{itemize}
 \item ASL –Applied Science Laboratories, Bedford, USA
@@ -118,11 +118,11 @@ The first problem to deal with when implementing a contemporary usability labora
 \end{itemize}
 
 
-Of course, there are many more new competitors, like, for example, Mangold International GmbH, Arnstorf, Interactive Minds GmbH, Dresden, both Germany and Eyetech, Digital Systems, Mesa, USA to name but a few. However, these manufacturers in my opinion offer equipment more for media and advertisement consultants than for profound scientific research. Besides the manufacturer, the final buying decision should mainly be based on two questions: {\textquotedbl}What do I really need?{\textquotedbl} and {\textquotedbl}Which manufacturers meet my requirements?{\textquotedbl} The first decision that has to be taken is about which of the eye tracking working solutions are required for the planned laboratory. Basically, there are three different types of eye tracking systems: workstations, mobile solutions and eye tracking glasses. In Figure \ref{fig:3} an example of each solution is given.
+Of course, there are many more new competitors, like, for example, Mangold International GmbH, Arnstorf, Interactive Minds GmbH, Dresden, both Germany and Eyetech, Digital Systems, Mesa, USA to name but a few. However, these manufacturers in my opinion offer equipment more for media and advertisement consultants than for profound scientific research. Besides the manufacturer, the final buying decision should mainly be based on two questions: "What do I really need?" and "Which manufacturers meet my requirements?" The first decision that has to be taken is about which of the eye tracking working solutions are required for the planned laboratory. Basically, there are three different types of eye tracking systems: workstations, mobile solutions and eye tracking glasses. In Figure \ref{fig:3} an example of each solution is given.
 
 
  
-\begin{figure}[h]
+\begin{figure}
  \includegraphics[width=\textwidth]{figures/Roesener3.png}
  \caption{Eye tracking workstation, mobile eye tracker, eye-tracking glasses (Tobii 2014 / SMI 2014)}
  \label{fig:3}
@@ -141,9 +141,9 @@ The decision to discuss only the three abovementioned issues was taken for the f
 
 \subsubsection{Sampling rate}
 
-{\textquotedbl}The sampling frequency is one of the most highlighted properties of eye trackers by manufacturers, and there is a certain competition in having the fastest system.{\textquotedbl} (Holmqvist/Nyström 2011, 29). The sampling rate is measured in hertz (Hz = times per second) and various systems with sampling rates from 25-30 Hz up to more than 1000 Hz do exist. Reasons for not purchasing a fast system can be that high-speed eye trackers are more expensive, that they are more restrictive to the participants and that they produce larger data files. On the other hand, a high sampling rate is necessary for certain eye tracking measures as shown in Figure \ref{fig:4}.
+"The sampling frequency is one of the most highlighted properties of eye trackers by manufacturers, and there is a certain competition in having the fastest system." (Holmqvist/Nyström 2011, 29). The sampling rate is measured in hertz (Hz = times per second) and various systems with sampling rates from 25-30 Hz up to more than 1000 Hz do exist. Reasons for not purchasing a fast system can be that high-speed eye trackers are more expensive, that they are more restrictive to the participants and that they produce larger data files. On the other hand, a high sampling rate is necessary for certain eye tracking measures as shown in Figure \ref{fig:4}.
 
-\begin{figure}[h]
+\begin{figure}
  \includegraphics[width=\textwidth]{figures/Roesener4.png}
  \caption{Fixation recorded at different sampling frequencies (Holmqvist/Nyström 2011, 31)}
  \label{fig:4}
@@ -156,7 +156,7 @@ On top of Figure \ref{fig:4}, you have a fixation of a certain time shown as sol
 
 As shown in Figure \ref{fig:5} different manufacturers offer various solutions for testing mobile devices. 
 
-\begin{figure}[h]
+\begin{figure}
  \includegraphics[width=\textwidth]{figures/Roesener5.png}
  \caption{Mobile device stands and eye tracking glasses (Tobii 2014 / SMI 2014)}
  \label{fig:5}
@@ -207,7 +207,7 @@ The same applies to experimental design and setup. If research is planned and co
 Of course, several layouts for usability laboratories are possible. For example, the 'executive observation lounge' in Figure \ref{fig:6} is not essential for running a successful usability laboratory. It might be interesting though for a third group of observers to discuss the test without disturbing the experimenters and usability specialists in the observation room (cf. Nielsen 1993, 203ff.). In my view for academic purposes, the one laboratory solution is absolutely sufficient. Naturally, if larger groups or a lot of participants should be tested simultaneously a multi-laboratory solution would be appropriate. However, this applies rather for bigger companies, where series of tests with large groups are conducted.
 
 
-\begin{figure}[h]
+\begin{figure}
  \includegraphics[width=\textwidth]{figures/Roesener6.png}
  \caption{Floor plan for a hypothetical usability laboratory (Nielsen 1993, 201)}
  \label{fig:6}
@@ -256,7 +256,7 @@ There are two video cameras in the laboratory. The cameras are mounted under the
 The usability laboratory at Flensburg University of Applied Sciences is an example for a compromise between an eye tracking laboratory for language and translation research only on the one hand and a fully equipped usability lab on the other hand. It combines features and possibilities of both worlds so that it serves most of the interests of the different future user groups. 
 
 
-\begin{figure}[h]
+\begin{figure}
  \includegraphics[width=\textwidth]{figures/Roesener7.png}
  \caption{Floor plan / layout of the usability laboratory of Flensburg University of Applied Sciences (test room and small control room; separating wall with one way mirror)
 }
@@ -299,7 +299,7 @@ For the implementation and operation of a contemporary usability laboratory also
 A sustainable implementation of any contemporary usability laboratory at a university or similar institution is - in my opinion - only possible if a few key principles are observed. These principles are multiplicity, integration, expertise and self determined learning. Multiplicity in this case simply means that the usability laboratory should be used by many different users and groups, for example, various courses of study from different departments and faculties. Thereby a high acceptance and recognition of the subject usability is ensured. Integration on the other hand guarantees for permanent utilization of the laboratory. If usability engineering becomes a proper component of teaching and research activities of several courses of study, the laboratory will be permanently in use. In addition, growing usability engineering expertise due to many interdisciplinary projects will lead to a more effective usage of the laboratory, and subsequently also to better (project) results.
 
 
-Finally, student projects, based on self-determined learning principles and with the usability laboratory involved in the research, create a very attractive field of studies. Once the students start to develop their own research projects and conduct their own eye tracking or usability tests in the laboratory, usability engineering is well established as an attractive field of research in the courses of study. This could then, due to project papers and bachelor and master theses, lead to more {\textquotedbl}usability driven{\textquotedbl} contacts with companies and manufacturers on the market. And this in turn guarantees that the courses of study offered at the university are vocationally orientated and of high practical relevance. All the abovementioned points apply especially for Flensburg University of Applied Science. The full integration of the new usability laboratory into teaching and research activities of the university is the main objective and the desirable future for this laboratory.
+Finally, student projects, based on self-determined learning principles and with the usability laboratory involved in the research, create a very attractive field of studies. Once the students start to develop their own research projects and conduct their own eye tracking or usability tests in the laboratory, usability engineering is well established as an attractive field of research in the courses of study. This could then, due to project papers and bachelor and master theses, lead to more "usability driven" contacts with companies and manufacturers on the market. And this in turn guarantees that the courses of study offered at the university are vocationally orientated and of high practical relevance. All the abovementioned points apply especially for Flensburg University of Applied Science. The full integration of the new usability laboratory into teaching and research activities of the university is the main objective and the desirable future for this laboratory.
 
 
 \section{References}
@@ -329,7 +329,7 @@ Holmqvist, Kenneth / Nyström, Marcus et. al. 2011. “Eye Tracking. A comprehen
 
 
 
-ISO 9241. 1992. “Ergonomic requirements for office work with visual display terminals“. From 2006 {\textquotedbl}Ergonomics of Human System Interaction{\textquotedbl}. International Organization for Standardization. Geneva. Switzerland.
+ISO 9241. 1992. “Ergonomic requirements for office work with visual display terminals“. From 2006 "Ergonomics of Human System Interaction". International Organization for Standardization. Geneva. Switzerland.
 
 
 
