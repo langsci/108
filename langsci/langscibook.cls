@@ -1358,6 +1358,7 @@ is, or will remain, accurate or appropriate.
 	\setcounter{tocdepth}{0}\fi			% show only parts and chapters
 \settocstylefeature[-1]{pagenumberbox}{\csname @gobble\endcsname}	% parts without page number
 \settocstylefeature[-1]{leaders}{\hfill}							% parts without dots#
+\settocfeature{raggedhook}{\raggedright}
 	
 \usepackage{chngcntr}
 \counterwithout{figure}{chapter}
