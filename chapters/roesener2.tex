@@ -44,8 +44,34 @@ I will use this broader definition as a basis in order to develop the design of 
 
   
 \begin{figure}[t]
- \includegraphics[width=\textwidth]{figures/Roesener1.png}
- \caption{Usability of online shops (Source: TNS Emnid 2014)}
+%  \includegraphics[width=\textwidth]{figures/Roesener1.png}
+\begin{tikzpicture}
+    \begin{axis}[
+	axis lines*=left,
+% 	ybar stacked,
+	    bar width=15pt,
+    	nodes near coords,
+	enlargelimits=0.15,
+        ymajorgrids = true,
+% 	legend style={at={(0.1,0.22)},
+% 		    anchor=west},
+	ylabel={\%},
+	y=0.5mm,
+	ymin=0,
+	symbolic x coords={yes, no, do not visit},
+	xtick=data,
+	x tick label style={}, 
+	]
+	\addplot[ybar,lsRichGreen!80!black,fill=lsRichGreen] plot coordinates {(yes,49) (no,43) (do not visit,8)};
+    \end{axis} 
+
+\end{tikzpicture}
+
+\todo[inline]{add correct values}
+\todo[inline]{check caption }
+
+
+ \caption{Usability of online shops (Source: TNS Emnid 2014). Values indicate how many users have ever left an online shop because of poor usability.}
  \label{roesener:fig:1}
 \end{figure} 
  
@@ -68,8 +94,59 @@ From the 92\% of the web users who do use online shops, more than 50\% consider 
 
 Possible answers were ``I use this'', ``I plan to use this'' and ``Not planned''. The survey was conducted by ibi research University Regensburg GmbH. 
 
-\begin{figure}[t]
+\begin{figure} 
  \includegraphics[width=\textwidth]{figures/Roesener2.png}
+
+\begin{tikzpicture} 
+\begin{axis}[ title=\parbox{.7\textwidth}{
+		  Welches der folgenden kundenbezogenen Instrumente setzen 
+		  Sie  ein oder planen Sie einzusetzen, um den Absatz Ihres 
+		  Online-Shops zu vergrößern?}, 
+	xbar, 
+        xmajorgrids = true,
+        width  = .8\textwidth,
+	height= 9.5cm, 
+	reverse legend,
+	y tick label style={font=\small,text width=3cm,align=left},
+% enlarge y limits=0.5, 
+	xlabel={\%}, 
+	symbolic y coords={Usability-Evaluierung durch externe Anbieter,Zertifizierung durch einen Anbieter eines Gütesiegels,Kundenbefragung zur Identifizierung von Verbesserungs\-möglichkeiten,Analyse des Nutzerverhaltens zur Identifizierung von Optimierungen}, ytick=data, nodes near coords, nodes near coords align={horizontal}, ]
+
+	\addplot[style={lsNightGreen,
+		      fill=lsNightGreen}
+		] coordinates {
+		    (32,Analyse des Nutzerverhaltens zur Identifizierung von Optimierungen) 
+		    (32,Kundenbefragung zur Identifizierung von Verbesserungs\-möglichkeiten) 
+		    (36,Zertifizierung durch einen Anbieter eines Gütesiegels) 
+		    (78,Usability-Evaluierung durch externe Anbieter)
+	}; 
+	\addlegendentry{not projected};
+
+	\addplot[style={lsRichGreen,
+			fill=lsRichGreen}
+		] coordinates {
+		    (38,Analyse des Nutzerverhaltens zur Identifizierung von Optimierungen)
+		    (47,Kundenbefragung zur Identifizierung von Verbesserungs\-möglichkeiten)
+		    (46,Zertifizierung durch einen Anbieter eines Gütesiegels) 
+		    (14,Usability-Evaluierung durch externe Anbieter)
+	}; 
+	\addlegendentry{projected};
+	\addplot[style={lsLightGreen,fill=lsLightGreen}
+		] coordinates {
+		    (30,Analyse des Nutzerverhaltens zur Identifizierung von Optimierungen)
+		    (21,Kundenbefragung zur Identifizierung von Verbesserungs\-möglichkeiten) 
+		    (19,Zertifizierung durch einen Anbieter eines Gütesiegels) 
+		    (8,Usability-Evaluierung durch externe Anbieter)
+	};  
+	\addlegendentry{using};
+\end{axis} 
+\end{tikzpicture}
+
+  
+\todo[inline]{translate labels}
+ 
+
+\todo[inline]{add correct values}
  \caption{Instruments to improve the sales of online shops (Source: ibi research University Regensburg GmbH 2014)}
  \label{roesener:fig:2}
 \end{figure} 
@@ -143,7 +220,7 @@ The decision to discuss only the three abovementioned issues was taken for the f
 As noted by \citet[29]{Holmqvist2011} ``[t]he sampling frequency is one of the most highlighted properties of eye trackers by manufacturers, and there is a certain competition in having the fastest system.'' The sampling rate is measured in Hertz (Hz = times per second) and various systems with sampling rates from 25-30 Hz up to more than 1000 Hz do exist. Reasons for not purchasing a fast system can be that high-speed eye trackers are more expensive, that they are more restrictive to the participants and that they produce larger data files. On the other hand, a high sampling rate is necessary for certain eye tracking measures as shown in \figref{roesener:fig:4}.
 
 \begin{figure}
- \includegraphics[width=\textwidth]{figures/Roesener4.png}
+ \includegraphics[width=\textwidth]{figures/Roesener4.pdf}
  \caption{Fixation recorded at different sampling frequencies \citep[31]{Holmqvist2011}}
  \label{roesener:fig:4}
 \end{figure} 
