@@ -210,9 +210,39 @@ Different sources were used and categorised as follows (see also \figref{nitzke:
 
 
  
-\begin{figure}[h]
+\begin{figure} 
  % TODO: replace with vector graphics
  \includegraphics[width=\textwidth]{figures/Nitzke1.png}
+
+\begin{tikzpicture}
+    \begin{axis}[
+        width  = .9\textwidth,
+        height = 8cm,
+%         major x tick style = transparent,
+        ybar,
+        bar width=15pt,
+        ymajorgrids = true,
+        ylabel = {Sources},
+% 	ymin = 0, 
+	symbolic x coords={bilingual dictionary, monolingual dictionary, synonyms, machine translations, encyclopeda , search engine, news},
+%         xtick = data,
+x tick label style={rotate=30, anchor=east} ,
+%         scaled y ticks = false,
+% 	legend style={at={(0.2,1)},
+% 		      anchor=north},
+    ]
+        \addplot[style={lsRichGreen,fill=lsRichGreen,mark=none}]  coordinates {(bilingual dictionary,101)  
+ 			  (monolingual dictionary,4) 
+			  (synonyms,5)			
+			  (machine translations, 19) 
+			  (encyclopeda , 16) 		
+			  (search engine,50) 	
+			  (news,70) } ; 
+    \end{axis}
+\end{tikzpicture}
+\todo[inline]{add correct values}
+
+
  \caption{Sources for research}
  \label{nitzke:fig:1}
 \end{figure} 
@@ -480,7 +510,7 @@ There is no statistically significant correlation between experience and researc
 
 
 
-In the retrospective questionnaire, we asked the participants how satisfied they had been with their post-editing tasks. The participants could choose from five answers, each choice was given a value that will be added in brackets: highly satisfied (two points), somewhat satisfied (one point), neutral (no point), somewhat dissatisfied (minus one point) and highly dissatisfied (minus two points). The mean of the added values indicates which tendency the participants had in judging their results. The professionals were quite critical about their work and were not satisfied (mean:~-0.68, SD:~1.43) with their monolingual post-edited target texts. The semi-professionals were neither satisfied nor dissatisfied with their work (mean:~0.08, SD:~1.08). The satisfaction with the bilingual post-editing task was higher; however, professionals (mean:~0.18, SD:~1.25) were still more critical about their bilingual post-editing product than semi-professionals (mean:~0.67, SD: 0.89). This low satisfaction with the MPE tasks could be a sign that the participants were rather frustrated with the task. The task was new to (most of) the participants and they could not use the problem-solving strategies they use in translation from scratch. One remaining question is how much influence experience in MPE would have on the final target text. Maybe some strategies that are unique for MPE would be developed after some experience and the task would a) produce better target texts and b) would be less exhausting/frustrating.
+In the retrospective questionnaire, we asked the participants how satisfied they had been with their post-editing tasks. The participants could choose from five answers, each choice was given a value that will be added in brackets: highly satisfied (two points), somewhat satisfied (one point), neutral (no point), somewhat dissatisfied (minus one point) and highly dissatisfied (minus two points). The mean of the added values indicates which tendency the participants had in judging their results. The professionals were quite critical about their work and were not satisfied (mean:~-0.68, SD:~1.43) with their monolingual post-edited target texts. The semi-professionals were neither satisfied nor dissatisfied with their work (mean:~0.08, SD:~1.08). The satisfaction with the bilingual post-editing task was higher; however, professionals (mean:~0.18, SD:~1.25) were still more critical about their bilingual post-editing product than semi-professionals (mean:~0.67, SD: 0.89). This low satisfaction with the MPE tasks could be a sign that the participants were rather frustrated with the task. The task was new to (most of) the participants and they could not use the problem-solving strategies they use in translation from scratch. One remaining question is how much influence experience in MPE would have on the final target text. Maybe some strategies that are unique for MPE would be developed after some experience and the task would a) produce better target texts and b) would be less exhausting/frustrating.    
 
 
 \section{Future work and outlook\label{nitzke:sec:FutureWorkAndOutlook}}
