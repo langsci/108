@@ -248,7 +248,30 @@ In addition to recording the eye movements and analysing the attention and react
 \end{itemize}
 
 \begin{figure}
- \includegraphics[width=\textwidth]{figures/Fox11.png}
+  \begin{tikzpicture}
+    \begin{axis}[
+	axis lines*=left,
+	ybar stacked,
+	    bar width=15pt,
+    % 	nodes near coords,
+	enlargelimits=0.15,
+	legend style={at={(0.1,0.22)},
+		    anchor=west},
+	ylabel={},
+	y=0.5mm,
+	ymin=0,
+	symbolic x coords={1, 2, 3, 4, 5, 6, 7},
+	xtick=data,
+	x tick label style={},
+	]
+	\addplot+[ybar] plot coordinates {(1,100) (2,100) (3,88) (4,100) (5,81) (6,100) (7,92)};
+	\addplot+[ybar] plot coordinates {(1,0)  (2,0)  (3,12)   (4,0)   (5,19) (6,0)  (7,8)};
+	\legend{\strut agreement, \strut disagreement}
+    \end{axis} 
+  \end{tikzpicture}
+
+
+%  \includegraphics[width=\textwidth]{figures/Fox11.png}
  \caption{Distribution of agreement and disagreement with the statements}
  \label{fox:fig:11}
 \end{figure} 
