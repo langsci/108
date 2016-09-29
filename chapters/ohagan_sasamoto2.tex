@@ -136,7 +136,9 @@ A heatmap visualization like \figref{ohagan:fig:2} demonstrates the hot-spots wh
 Based on these initial observations we set up three AOIs as in \figref{ohagan:fig:3} for our analysis:
 
 \begin{figure}
- \includegraphics[width=\textwidth]{figures/OHagan3.png}
+ \includegraphics[width=\textwidth]{figures/OHagan3.pdf}
+
+
 	\caption{Setting up of three AOIs (AOI A: 1787x434, AOI B 1787x402, AOI C: 1787x1224)}
 	\label{ohagan:fig:3}
 \end{figure}
@@ -149,6 +151,58 @@ A far greater number of fixations was shown in the middle region of the screen t
 
 \begin{figure}
  \includegraphics[width=\textwidth]{figures/OHagan4.png}
+ 
+\begin{tikzpicture}
+    \begin{axis}[
+        width  = 0.85*\textwidth,
+        height = 8cm,
+        major x tick style = transparent,
+        ybar,
+        bar width=4pt,
+        ymajorgrids = true,
+        ylabel = {Ratio},
+	ymin = 0,
+	symbolic x coords={P01,P02,P04,P05,P06,P07,P08,P10,P12,P14,P15,P16},
+        xtick = data,
+        scaled y ticks = false,
+	legend style={at={(0.2,1)},
+		    anchor=north},
+    ]
+        \addplot[style={lsLightGreen,fill=lsLightGreen,mark=none}]
+            coordinates {(P01,1.0) 
+			(P02,1.0) 
+			(P04,1.0)
+			(P05,1.0)
+			(P06,1.0)
+			(P07,1.0)
+			(P08,1.0)
+			(P10,1.0)
+			(P12,1.0)
+			(P14,1.0)
+			(P15,1.0)
+			(P16,1.0)
+};
+
+        \addplot[style={lsRichGreen,fill=lsRichGreen,mark=none}]
+             coordinates {(P01, 1.0) 
+			(P02,1.0) 
+			(P04,1.0)
+			(P05,1.0)
+			(P06,1.0)
+			(P07,1.0)
+			(P08,1.0)
+			(P10,1.0)
+			(P12,1.0)
+			(P14,1.0)
+			(P15,1.0)
+			(P16,1.0)};
+ 
+
+        \legend{AOI A/AOI C, AOI B/AOI C}
+    \end{axis}
+\end{tikzpicture}
+\todo[inline]{add correct values}
+
 \caption{Fixation Count Ratio for Caption (AOI A) and Face (AOI B) Areas in relation to Total Screen Area (AOI C) }
 % \todo[inline]{figures should be redrawn as vector} % -> no vector graphics available
 \label{ohagan:fig:4}
@@ -158,7 +212,31 @@ A far greater number of fixations was shown in the middle region of the screen t
 We also calculated the fixation time of the caption area (AOI A) in relation to that of the whole screen area (AOI C) with the mean ratio of all participants (N=14) at 12\%.  However, as illustrated in \figref{ohagan:fig:5}, the results show a considerable variation according to each participant between 1\% (P4, P8, P14) and 42\% (P5) (SD=14\%).  For information, this compares with 20\% in \citet{dydewalle1991} as previously mentioned. Given the pilot nature of this study these figures may not be fully trustworthy and we did not conduct any statistical analysis. Nevertheless the results gave us a useful indication for our future study and these findings matched our initial observation of the gaze plots and fixation heatmaps, showing that considerably less visual attention was evident in the caption area (AOI A) in comparison to the face area (AOI B) in relation to the fixation on the whole screen.  
 
 \begin{figure}
- \includegraphics[width=\textwidth]{figures/OHagan5.png}
+%  \includegraphics[width=\textwidth]{figures/OHagan5.png}
+
+  \begin{tikzpicture}
+    \begin{axis}[
+	axis lines*=left,
+% 	ybar stacked,
+	    bar width=15pt,
+    	nodes near coords,
+	enlargelimits=0.15,
+	legend style={at={(0.1,0.22)},
+		    anchor=west},
+	ylabel={\%},
+	y=0.7mm,
+	ymin=0,
+	symbolic x coords={P01,P02,P04,P05,P06,P07,P08,P10,P12,P14,P15,P16},
+	xtick=data,
+	x tick label style={},
+	colormap={bw}{gray(0cm)=(0); gray(1cm)=(1)}
+	]
+	\addplot+[ybar,lsRichGreen!80!black,fill=lsRichGreen] plot coordinates {
+	  (P01,19) (P02,5) (P04,1) (P05,42) (P06,6) (P07,23) (P08,1)  (P10,35)  (P12,6) (P14,1) (P15,6) (P16,2)}; 
+    \end{axis} 
+  \end{tikzpicture}
+
+
 \caption{Ratio of Fixation Time in the Caption Area in relation to Fixation Time to the Whole Screen}
 \label{ohagan:fig:5}
 \end{figure}
