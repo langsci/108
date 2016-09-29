@@ -81,11 +81,50 @@ Figures \ref{lang:fig:1} and \ref{lang:fig:2} below show the percentages of righ
 
 \begin{figure}[h]
  \includegraphics[width=\textwidth]{figures/Lang1.png}
+
+\begin{tikzpicture} 
+\begin{axis}[         width  = \textwidth,
+        height = 8cm, 
+	ymajorgrids = true, 
+	ymin = 0, 
+	ymax = 100, 
+        xtick = data, 
+	legend style={at={(0.2,1)},
+		    anchor=north},
+% 	symbolic x coords={1,2,3,4,5}
+] 
+ 
+
+ \addplot[style={lsLightGreen,very thick}] coordinates {
+ (1,80) 
+ (2,10) 
+ (3,20) 
+ (4,15) 
+ (5,99) 
+ }; 
+\addlegendentry{Finnish};
+
+ \addplot[style={lsDarkBlue,very thick}] coordinates {
+ (1,70) 
+ (2,50) 
+ (3,75) 
+ (4,22) 
+ (5,17) 
+ }; 
+\addlegendentry{Russian};
+
+\end{axis} 
+\end{tikzpicture}
+
+\todo[inline]{get real values and add them above}
+\todo[inline]{adapt all other charts in this chapter to this model}
+
  \caption{The percentage of correct answers in Finnish and Russian groups to the questions (1-5) concerning the image of the stimulus video.}
  \label{lang:fig:1}
 \end{figure} 
 
 \begin{figure}[h]
+ 
  \includegraphics[width=\textwidth]{figures/Lang2.png}
  \caption{The percentage of correct answers in Finnish and Russian groups to the questions (6-17) concerning the subtitles of the stimulus video.}
  \label{lang:fig:2}
