@@ -212,19 +212,19 @@ Different sources were used and categorised as follows (see also \figref{nitzke:
  
 \begin{figure} 
  % TODO: replace with vector graphics
- \includegraphics[width=\textwidth]{figures/Nitzke1.png}
+%  \includegraphics[width=\textwidth]{figures/Nitzke1.png}
 
 \begin{tikzpicture}
     \begin{axis}[
         width  = .9\textwidth,
-        height = 8cm,
+        height = 6cm,
 %         major x tick style = transparent,
         ybar,
         bar width=15pt,
         ymajorgrids = true,
         ylabel = {Sources},
 % 	ymin = 0, 
-	symbolic x coords={bilingual dictionary, monolingual dictionary, synonyms, machine translations, encyclopeda , search engine, news},
+	symbolic x coords={bilingual dictionary, monolingual dictionary, synonyms, machine translations, encyclopedia , search engine, news},
 %         xtick = data,
 x tick label style={rotate=30, anchor=east} ,
 %         scaled y ticks = false,
@@ -233,14 +233,14 @@ x tick label style={rotate=30, anchor=east} ,
     ]
         \addplot[style={lsRichGreen,fill=lsRichGreen,mark=none}]  coordinates {(bilingual dictionary,101)  
  			  (monolingual dictionary,4) 
-			  (synonyms,5)			
-			  (machine translations, 19) 
-			  (encyclopeda , 16) 		
-			  (search engine,50) 	
-			  (news,70) } ; 
+			  (synonyms,4)			
+			  (machine translations, 18) 
+			  (encyclopedia , 11) 		
+			  (search engine,21) 	
+			  (news,4) } ; 
     \end{axis}
 \end{tikzpicture}
-\todo[inline]{add correct values}
+% \todo[inline]{add correct values}
 
 
  \caption{Sources for research}
