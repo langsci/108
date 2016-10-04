@@ -150,12 +150,12 @@ We applied an approach inspired by the above-mentioned study by \citet{josephson
 A far greater number of fixations was shown in the middle region of the screen than in the bottom caption region in terms of mean number of fixations with M=886 and M=325 respectively for the total valid results from 14 participants. However, in relation to the mean fixation duration the results showed with the middle region slightly shorter than the caption region at M=298ms and M=344ms respectively. For reference purposes the value of mean fixation for ``normal reading'' is reported as 200-250ms \citep{Bruycker2007}. Using the ratio of fixation counts of each AOIs (e.g. Caption AOI A and Face AOI B) in relation to the total fixation counts in the whole screen (AOI C) was calculated as shown in \figref{ohagan:fig:4}. 
 
 \begin{figure}
- \includegraphics[width=\textwidth]{figures/OHagan4.png}
+%  \includegraphics[width=\textwidth]{figures/OHagan4.png}
  
 \begin{tikzpicture}
     \begin{axis}[
         width  = \textwidth,
-        height = 8cm,
+        height = 5cm,
         major x tick style = transparent,
         ybar,
         bar width=4pt,
@@ -165,43 +165,43 @@ A far greater number of fixations was shown in the middle region of the screen t
 	symbolic x coords={P01,P02,P04,P05,P06,P07,P08,P10,P12,P14,P15,P16},
         xtick = data,
         scaled y ticks = false,
-	legend style={at={(0.2,1)},
+	legend style={at={(0.54,1)},
 		    anchor=north},
     ]
         \addplot[style={lsLightGreen,fill=lsLightGreen,mark=none}]
-            coordinates {(P01,1.0) 
-			(P02,1.0) 
-			(P04,1.0)
-			(P05,1.0)
-			(P06,1.0)
-			(P07,1.0)
-			(P08,1.0)
-			(P10,1.0)
-			(P12,1.0)
-			(P14,1.0)
-			(P15,1.0)
-			(P16,1.0)
+            coordinates {(P01,0.2094913477) 
+			(P02,0.0408573342) 
+			(P04,0.0074074074)
+			(P05,0.4553706505)
+			(P06,0.08)
+			(P07,0.2724627137)
+			(P08,0.0059347181)
+			(P10,0.3517052375)
+			(P12,0.0559945036)
+			(P14,0.0089795918)
+			(P15,0.0857819905)
+			(P16,0.0099447514)
 };
 
         \addplot[style={lsRichGreen,fill=lsRichGreen,mark=none}]
-             coordinates {(P01, 1.0) 
-			(P02,1.0) 
-			(P04,1.0)
-			(P05,1.0)
-			(P06,1.0)
-			(P07,1.0)
-			(P08,1.0)
-			(P10,1.0)
-			(P12,1.0)
-			(P14,1.0)
-			(P15,1.0)
-			(P16,1.0)};
+             coordinates {(P01, 0.3099108547) 
+			(P02,0.5472203617) 
+			(P04,0.5609427609)
+			(P05,0.3350983359)
+			(P06,0.464)
+			(P07,0.308839578)
+			(P08,0.3471810089)
+			(P10,0.4263093788)
+			(P12,0.609412573)
+			(P14,0.5673469388)
+			(P15,0.4819905213)
+			(P16,0.5049723757)};
  
 
         \legend{AOI A/AOI C, AOI B/AOI C}
     \end{axis}
 \end{tikzpicture}
-\todo[inline]{add correct values}
+% \todo[inline]{add correct values}
 
 \caption{Fixation Count Ratio for Caption (AOI A) and Face (AOI B) Areas in relation to Total Screen Area (AOI C) }
 % \todo[inline]{figures should be redrawn as vector} % -> no vector graphics available
@@ -232,7 +232,18 @@ We also calculated the fixation time of the caption area (AOI A) in relation to 
 	colormap={bw}{gray(0cm)=(0); gray(1cm)=(1)}
 	]
 	\addplot+[ybar,lsRichGreen!80!black,fill=lsRichGreen] plot coordinates {
-	  (P01,19) (P02,5) (P04,1) (P05,42) (P06,6) (P07,23) (P08,1)  (P10,35)  (P12,6) (P14,1) (P15,6) (P16,2)}; 
+(P01,19.47733441) 
+(P02,04.99311069) 
+(P04,01.22486586)
+(P05,42.31766084) 
+(P06,06.04866269) 
+(P07,23.33898154) 
+(P08,00.87072019) 
+(P10,34.98803246) 
+(P12,05.73730353)
+(P14,00.92677696)
+(P15,06.41368016)
+(P16,02.25249973)}; 
     \end{axis} 
   \end{tikzpicture}
 
