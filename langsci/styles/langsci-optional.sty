@@ -136,11 +136,11 @@
 %width is the width of the parbox
 %height is the buffer space used to vertically stretch the headere
 \setlength{\rotwidth}{#1}
-\setlength{\rotheight}{.85\rotwidth}
-  \begin{rotate}{33}~ %nbsp shifts the content away from the line underneath
+% \setlength{\rotheight}{.85\rotwidth}
+  \begin{turn}{33}~ %nbsp shifts the content away from the line underneath
    \parbox{\rotwidth}{\raggedright #2}   
-  \end{rotate}%
-  \rule{0pt}{\rotheight} %add zero width rule to get the right table height
+  \end{turn}%
+%   \rule{0pt}{\rotheight} %add zero width rule to get the right table height
 }
 
 % example metadata

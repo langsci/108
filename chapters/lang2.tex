@@ -24,6 +24,7 @@ Studies on using subtitles in language learning (e.g. \citealt{Koolstra1999child
 
 \citet{lee2013} studied how subtitles affect the comprehension of narrative film in a two-part experimental setting. In the first part, they asked a group of native English participants to write down their thoughts while watching a normal (English) or dubbed and subtitled (dubbed into French and subtitled into English) version of a film. In the second part, they asked the participants to sort the events of the film according to their similarity. The results of both experiments showed that the participants who saw the subtitled version made more remarks that referred to earlier events of the film (i.e. \textit{back} or \textit{bridging inferences}) while the participants who saw the normal version made more remarks that drew from the viewers’ general knowledge outside the narrative of the film (i.e. \textit{outside inferences} or \textit{elaborations}). Bridging inferences are considered as a sign of local coherence and outside inferences are a sign of global coherence (Albrecht \& O'Brien 1993, referred to in \citealt{lee2013}). The conclusion here was that the viewer's overall comprehension of the film suffered from having to follow the subtitles and the image at the same time.
 
+\largerpage
 An earlier study by \citet{lavaur2011} reached similar conclusions. They had a ``3 by 3'' test setting, in which French natives with beginner, intermediate, or advanced English skills, 30 participants per group, saw an English film clip with no subtitles, French (interlingual) subtitles or English (intralingual) subtitles. After seeing the film extract, the participants completed a comprehension test, which included questions requiring recall of verbal information and visual information. The results showed that participants with beginner language skills recalled visual details well when no subtitles were present, but the score went down when subtitles were present. Dialogue recall score naturally went up with the subtitles. In the intermediate language skill group, both the dialogue recall and visual recall scores were largely unaffected by the different subtitling conditions. In other words, the presence or absence of subtitles did not affect the recall of visual details, and the presence of native language subtitles improved the dialogue recall scores only a little. The advanced language skill group got best scores when no subtitles were present in both recall types, and the scores were worst with the French subtitles. \citet{lavaur2011} interpreted this as a proof of the distracting effect of the subtitles, especially when they are unnecessary for comprehension as ``two different types of information are transmitted through the same visual channel (images and subtitles), leading to a competition for cognitive resources'' (ibid.:460). It should be noted, though, that the participants in the study \citet{lavaur2011}, as well as the one by \citet{lee2013}, came from countries that do not use subtitling as the main method of translating foreign films, and thus they were not necessarily accustomed to watching subtitled films. 
  
 \largerpage
@@ -73,7 +74,7 @@ The participants of Experiment 1 consisted of 14 native Finnish speakers and 20 
 
 The data in experiment 1 was collected in several group sessions, which were similar in overall procedure save for one exception, detailed below. The participants were first verbally instructed about the procedure of the test session. They were told in advance that their comprehension of the documentary would be tested after seeing the video. The participants saw the stimulus video in a classroom with a data projector, white screen and sound system. After watching the documentary, the participants completed the written questionnaire. An exception to this procedure was the session that was held at Petrozavodsk State University, where the participants watched the documentary in a computer lab, each on a computer monitor of their own and wearing headphones. Each session took approximately 25 minutes in total.
 
-The questionnaires were analysed binomially in terms of correct answers and the binomial data was compared between the language groups with Pearson's $\chi $²-test with Yates' continuity correction (henceforth $\chi $²-test). Statistical analysis was done using the statistical software package R (version 3.1.0).
+The questionnaires were analysed binomially in terms of correct answers and the binomial data was compared between the language groups with Pearson's ${\chi}^2$-test with Yates' continuity correction (henceforth ${\chi}^2$-test). Statistical analysis was done using the statistical software package R (version 3.1.0).
 
 \subsubsection{Results}
 
@@ -82,42 +83,42 @@ Figures \ref{lang:fig:1} and \ref{lang:fig:2} below show the percentages of righ
 \begin{figure}[h]
  \includegraphics[width=\textwidth]{figures/Lang1.png}
 
-\begin{tikzpicture} 
-\begin{axis}[         width  = \textwidth,
-        height = 8cm, 
-	ymajorgrids = true, 
-	ymin = 0, 
-	ymax = 100, 
-        xtick = data, 
-	legend style={at={(0.2,1)},
-		    anchor=north},
-% 	symbolic x coords={1,2,3,4,5}
-] 
- 
-
- \addplot[style={lsLightGreen,very thick}] coordinates {
- (1,80) 
- (2,10) 
- (3,20) 
- (4,15) 
- (5,99) 
- }; 
-\addlegendentry{Finnish};
-
- \addplot[style={lsDarkBlue,very thick}] coordinates {
- (1,70) 
- (2,50) 
- (3,75) 
- (4,22) 
- (5,17) 
- }; 
-\addlegendentry{Russian};
-
-\end{axis} 
-\end{tikzpicture}
-
-\todo[inline]{get real values and add them above}
-\todo[inline]{adapt all other charts in this chapter to this model}
+% \begin{tikzpicture} 
+% \begin{axis}[         width  = \textwidth,
+%         height = 8cm, 
+% 	ymajorgrids = true, 
+% 	ymin = 0, 
+% 	ymax = 100, 
+%         xtick = data, 
+% 	legend style={at={(0.2,1)},
+% 		    anchor=north},
+% % 	symbolic x coords={1,2,3,4,5}
+% ] 
+%  
+% 
+%  \addplot[style={lsLightGreen,very thick}] coordinates {
+%  (1,80) 
+%  (2,10) 
+%  (3,20) 
+%  (4,15) 
+%  (5,99) 
+%  }; 
+% \addlegendentry{Finnish};
+% 
+%  \addplot[style={lsDarkBlue,very thick}] coordinates {
+%  (1,70) 
+%  (2,50) 
+%  (3,75) 
+%  (4,22) 
+%  (5,17) 
+%  }; 
+% \addlegendentry{Russian};
+% 
+% \end{axis} 
+% \end{tikzpicture}
+% 
+% \todo[inline]{get real values and add them above}
+% \todo[inline]{adapt all other charts in this chapter to this model}
 
  \caption{The percentage of correct answers in Finnish and Russian groups to the questions (1-5) concerning the image of the stimulus video.}
  \label{lang:fig:1}
@@ -132,7 +133,7 @@ Figures \ref{lang:fig:1} and \ref{lang:fig:2} below show the percentages of righ
 
 
 
-When the image-related and subtitle-related questions were analysed as one group, the overall performances of the Russian and Finnish participants were very even and no statistical difference was visible ($\chi $²(1) = 0.010, p = 0.921). Nevertheless, when the analysis was done separately for the two question groups, differences began to emerge. The Russian participants got slightly better scores than the Finnish participants in the subtitle-related questions (see \figref{lang:fig:2}) and the difference is statistically significant ($\chi $²(1) = 3.90, p = 0.048).  In turn, the Finnish group performed better on the questions concerning the image of the stimulus video (see \figref{lang:fig:1}), and here the difference is also statistically significant ($\chi $²(1) = 7.22, p = 0.007).
+When the image-related and subtitle-related questions were analysed as one group, the overall performances of the Russian and Finnish participants were very even and no statistical difference was visible (${\chi}^2(1) = 0.010, p = 0.921$). Nevertheless, when the analysis was done separately for the two question groups, differences began to emerge. The Russian participants got slightly better scores than the Finnish participants in the subtitle-related questions (see \figref{lang:fig:2}) and the difference is statistically significant (${\chi}^2(1) = 3.90, p = 0.048$).  In turn, the Finnish group performed better on the questions concerning the image of the stimulus video (see \figref{lang:fig:1}), and here the difference is also statistically significant (${\chi}^2(1) = 7.22, p = 0.007$).
 
 \subsubsection{Discussion}
 \largerpage
@@ -156,7 +157,7 @@ The participants' eye movements were tracked with SMI Eye Tracking Glasses 2.0 (
 
 Before starting the experiment, the participant received written instructions (available in Finnish and in Russian) that gave a broad outline of what to expect. However, neither the contents of the documentary nor the exact goal of the experiment were revealed. The eye tracking equipment was calibrated with three-point calibration, and the calibration was verified at the start and the end of the recording. The eye movements were recorded only when the participant was watching the documentary. After seeing the video stimulus, the participant was handed the questionnaire and he or she could answer it at his or her own pace. In Experiment 2, the questionnaire was available for the participants in Finnish and in Russian and they could answer it in either of the languages. Typically the session took around 25 minutes in total.
 
-To make the questionnaire data in Experiment 1 comparable with that of Experiment 2, the questions used for the analysis were the same, meaning that one image-related question and one subtitle-related question was omitted from the final analysis. To evaluate the effect of the omissions from the between-group analysis in Experiment 2, the statistical analysis was re-done with the omitted subtitle-related question, but this had no noticeable effect on the results. The questionnaire data was analysed with the $\chi $²-test, as in Experiment 1.
+To make the questionnaire data in Experiment 1 comparable with that of Experiment 2, the questions used for the analysis were the same, meaning that one image-related question and one subtitle-related question was omitted from the final analysis. To evaluate the effect of the omissions from the between-group analysis in Experiment 2, the statistical analysis was re-done with the omitted subtitle-related question, but this had no noticeable effect on the results. The questionnaire data was analysed with the ${\chi}^2$-test, as in Experiment 1.
 
 The gaze data was analysed with SMI BeGaze software (version 3.5). The analysis had to be done with the help of a process SMI calls ``semantic gaze mapping'', where gaze data from each recording is manually mapped to selected reference images. By default, the eye tracking glasses use their own scene camera recording as the stimulus video in which they map the gaze data. Mapping all recording data onto reference images via semantic gaze mappings essentially allows an aggregated data analysis of all participants as the analysis can be performed on the mapped reference images instead of the original recordings, each one of which includes data from only one participant. However, the BeGaze software currently does not allow videos to be used as reference stimulus in semantic gaze mapping, which meant that the mappings had to be done onto still screenshots of the documentary. This was not thought to pose a problem here, though, as the analysis is focused on the subtitles, which are a static element by nature. The advantage of the added accuracy of the eye tracking glasses weighted more when choosing the equipment for the experiment.
 
@@ -185,17 +186,17 @@ Figures \ref{lang:fig:3} and \ref{lang:fig:4}, below show the relative number of
  \label{lang:fig:4}
 \end{figure} 
 
-Similarly to the results in Experiment 1, when both types of questions were analysed together, there was no statistically significant difference in the overall performances of the two participant groups ($\chi $²(1)~=~0.574, p = 0.449). In image questions (see \figref{lang:fig:3}), the Finnish group got better scores in almost all questions, again as in Experiment 1, but this time the difference was much smaller and the difference in the overall score did not reach statistical significance ($\chi $²(1)~=~1.24,~p = 0.266). The results in the subtitle questions (see \figref{lang:fig:4}) were more inconsistent across the individual questions, and the overall performance between the groups was similar and no statistical significance was evident ($\chi $²(1)~=~0.028,~p = 0.868). When each question was analysed individually, none of the questions had statistically significant difference  between the groups, but one was close to the level of significance (question 23, $\chi $²(1)~=~3.44,~p = 0.064).
-
+Similarly to the results in Experiment 1, when both types of questions were analysed together, there was no statistically significant difference in the overall performances of the two participant groups (${\chi}^2(1) = 0.574, p = 0.449$). In image questions (see \figref{lang:fig:3}), the Finnish group got better scores in almost all questions, again as in Experiment 1, but this time the difference was much smaller and the difference in the overall score did not reach statistical significance (${\chi}^2(1) = 1.24, p = 0.266$). The results in the subtitle questions (see \figref{lang:fig:4}) were more inconsistent across the individual questions, and the overall performance between the groups was similar and no statistical significance was evident (${\chi}^2(1) = 0.028, p = 0.868$). When each question was analysed individually, none of the questions had statistically significant difference  between the groups, but one was close to the level of significance (question 23, ${\chi}^2(1) = 3.44, p = 0.064$).
+ 
 \newpage 
-The stimulus and questionnaire were the same in both of the experiments, and this allowed a comparison of the Russian groups. In questions concerning the image, the difference was not statistically significant ($\chi $²(1)~=~0.392,~p~=~0.531, respectively), but in subtitle questions the difference was highly significant ($\chi $²(1)~=~13.3,~p~{\textless}~0.001). A comparison of the two Finnish groups revealed no statistical differences in either types of questions ($\chi $²(1) = 0.277, p = 0.600 in image-related questions and $\chi $²(1) = 1.33, p = 0.248 in subtitle-related questions). Since the Finnish groups were identical in terms of language skills and thus their performance was also expected to be identical, this shows that the different experimental settings did not have a significant impact on the results.
+The stimulus and questionnaire were the same in both of the experiments, and this allowed a comparison of the Russian groups. In questions concerning the image, the difference was not statistically significant (${\chi}^2(1) = 0.392, p = 0.531$, respectively), but in subtitle questions the difference was highly significant (${\chi}^2(1) = 13.3, p < 0.001$). A comparison of the two Finnish groups revealed no statistical differences in either types of questions (${\chi}^2(1) = 0.277, p = 0.600$ in image-related questions and ${\chi}^2(1) = 1.33, p = 0.248$ in subtitle-related questions). Since the Finnish groups were identical in terms of language skills and thus their performance was also expected to be identical, this shows that the different experimental settings did not have a significant impact on the results.
 
 \paragraph{Eye tracking data}
 
-\tabref{lang:tab:1} (below) shows the descriptive statistics for the number of glances into the subtitle area as well as the average dwell times, fixation durations, and fixation counts in the Finnish and Russian groups. The data shows that the Russian participants made significantly less glances to the subtitle area compared to the Finnish group (W~=~101932.5, p {\textless} 0.001). They also skipped the subtitles completely in approximately 64\% of the cases, while the Finnish participants skipped subtitles only in approximately 21\% of the cases. Furthermore, when they looked at the subtitle area, the Russian groups' dwell times were shorter and fixation durations were longer compared to the Finnish groups, and the Russian participants made fewer fixations to the subtitle area. All of these differences were statistically very significant (dwell time: W = 63376.5, p {\textless} 0.001; average fixation duration: W = 38655.5; p {\textless} 0.001, fixation count: W= 60634.0, p {\textless} 0.001). Standard deviations and ranges in the dwell times were quite large in both groups, indicating high variation between individual participants.
+\tabref{lang:tab:1}   shows the descriptive statistics for the number of glances into the subtitle area as well as the average dwell times, fixation durations, and fixation counts in the Finnish and Russian groups. The data shows that the Russian participants made significantly less glances to the subtitle area compared to the Finnish group ($W = 101932.5, p < 0.001$). They also skipped the subtitles completely in approximately 64\% of the cases, while the Finnish participants skipped subtitles only in approximately 21\% of the cases. Furthermore, when they looked at the subtitle area, the Russian groups' dwell times were shorter and fixation durations were longer compared to the Finnish groups, and the Russian participants made fewer fixations to the subtitle area. All of these differences were statistically very significant (dwell time: $W = 63376.5, p < 0.001$; average fixation duration: $W = 38655.5; p < 0.001$, fixation count: $W = 60634.0, p < 0.001$). Standard deviations and ranges in the dwell times were quite large in both groups, indicating high variation between individual participants.
 
 
-\begin{table}
+\begin{table}[t]
 \small
 \begin{tabularx}{\textwidth}{Xrrrrcrrr} 
 \lsptoprule

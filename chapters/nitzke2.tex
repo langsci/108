@@ -60,14 +60,14 @@ In a study published by \citet{Koehn2010} the quality of MPE products was assess
 
 \section{Data set description and methodology\label{nitzke:sec:DataSetDescriptionAndMethodology}}
 
-The study was conducted at the University of Mainz, Department for Language, Culture and Translation Studies in Germersheim in 2012 on behalf of the Copenhagen Business School for their CRITT-TPR database \citep{carl2012critt, carl2013} which collects translation process data. In the CRITT-TPR database, data was collected for the same source texts but for different tasks, different target languages and with different tools\footnote{http://sourceforge.net/projects/tprdb/ (last accessed 16\textsuperscript{th} October 2015)}. Version 1.6 of the database was used for the data analysis. In the sub-project from which the data at hand was taken, six texts (newspaper articles and sociology-related texts) with different complexity levels had to be processed; the source language was English and the target language was German for all texts and tasks. The lengths of the source texts vary between 100 and 148 words. In total, 24 participants took part in the English-German subset, twelve of them professional translators (university degree and some professional work experience) and twelve semi-professionals (students of the university with only little professional experience). The participants were asked to translate two texts from scratch, bilingually post-edit two machine translated texts and monolingually post-edit two machine translated texts. The texts and tasks were permuted for each translator in a way that each text was translated and bilingually/monolingually post-edited equally often. Before and after the processing task, they had to complete questionnaires which dealt with general information about the participant, his/her attitude towards MT (in general and in regard to the MT output for the tasks), and self-estimation of their task performance. The MT output was produced by Google Translate (find more information on the dataset and the questionnaires in \citealt{carl2014}).
+The study was conducted at the University of Mainz, Department for Language, Culture and Translation Studies in Germersheim in 2012 on behalf of the Copenhagen Business School for their CRITT-TPR database \citep{carl2012critt, carl2013} which collects translation process data. In the CRITT-TPR database, data was collected for the same source texts but for different tasks, different target languages and with different tools\footnote{\url{http://sourceforge.net/projects/tprdb/} (last accessed 16\textsuperscript{th} October 2015).}. Version 1.6 of the database was used for the data analysis. In the sub-project from which the data at hand was taken, six texts (newspaper articles and sociology-related texts) with different complexity levels had to be processed; the source language was English and the target language was German for all texts and tasks. The lengths of the source texts vary between 100 and 148 words. In total, 24 participants took part in the English-German subset, twelve of them professional translators (university degree and some professional work experience) and twelve semi-professionals (students of the university with only little professional experience). The participants were asked to translate two texts from scratch, bilingually post-edit two machine translated texts and monolingually post-edit two machine translated texts. The texts and tasks were permuted for each translator in a way that each text was translated and bilingually/monolingually post-edited equally often. Before and after the processing task, they had to complete questionnaires which dealt with general information about the participant, his/her attitude towards MT (in general and in regard to the MT output for the tasks), and self-estimation of their task performance. The MT output was produced by Google Translate (find more information on the dataset and the questionnaires in \citealt{carl2014}).
 
 
 The tasks were conducted in Translog~II \citep{jakobsen2011, carl2012translog}, a programme used to record the sessions, key-strokes, mouse activity and gaze data with the help of the Tobii~TX300 eye-tracker, which also records the sessions, keystrokes, mouse activity and gaze data in Tobii Studio. There were no time restrictions and the participants could use the Internet freely as a research tool. Printed aids were not provided.
 
 
 
-An experience vector was created to correlate research behaviour (and other phenomena) with experience. In the questionnaire prior to the experiments, the participants were asked how many years they had studied or had been studying translation at university and how many years of professional translation experience they had. This information was used and the experience vector was calculated using the following simple formula:\\
+An experience vector was created to correlate research behaviour (and other phenomena) with experience. In the questionnaire prior to the experiments, the participants were asked how many years they had studied or had been studying translation at university and how many years of professional translation experience they had. This information was used and the experience vector was calculated using the following simple formula:
 
 \ea
 \small 
@@ -78,10 +78,14 @@ experience vector = years at university * 1 + years of professional experience *
 
 As mentioned before, the participants were selected according to their status: 12 were students at the university, 12 had finished their studies and had professional work experience. However, those groups were heterogeneous in themselves: Some students already had some professional experience. By contrast, some professionals had only recently completed their studies and had only little professional working experience, while other professional translators had been working as freelance translators for more than 10 years. The experience vector, therefore, represents the experience of the single participants in more detail and can be adapted for correlation calculations. The minimum value for the experience vector is two (two years at university and no professional translation experience), the maximum value is 45 (five years at university and twenty years of professional translation experience). There was no further possibility for the participants to explain what they were doing in those years of professional translation, e.g. if they were working full-time or part-time as freelance or in house translators or if they translated on a daily/regular basis, etc. Therefore, the experience vector is the most that could be obtained from the data. It suggests that the participants gain more translation experience as practising translators than at university. The degree that students receive in Germersheim also includes linguistics and cultural studies. In addition, some courses are offered on translation theory, domain-specific knowledge or introduce scientific writing, etc. Hence, the years at university receive a lower value than years of professional experience.\footnote{The correlations in this article have been tested for different experience values as well with
 
-\ea  \upshape experience vector = years at university * 1 + years of professional experience * \textbf{1}
+\ea
+\upshape experience vector = years at university * 1 + years of professional experience * \textbf{1} 
 \z
-\ea   \upshape experience vector = years at university * 1 + years of professional experience *\textbf{ 1.5}
+
+\ea
+\upshape experience vector = years at university * 1 + years of professional experience *\textbf{ 1.5}
 \z
+
 The correlation values and p-values naturally did change a little, but would not change the results, with only one exception in the first correlation for bilingual post-editing in \sectref{nitzke:sec:ScreenRecordings}, where the p-value was already close to the critical value .05. The correlation would in this case become significant. Hence, the experience vector may need further testing with larger data sets in future work.}
 
 
@@ -222,6 +226,7 @@ Different sources were used and categorised as follows (see also \figref{nitzke:
         ybar,
         bar width=15pt,
         ymajorgrids = true,
+	nodes near coords,
         ylabel = {Sources},
 % 	ymin = 0, 
 	symbolic x coords={bilingual dictionary, monolingual dictionary, synonyms, machine translations, encyclopedia , search engine, news},
@@ -258,7 +263,7 @@ The focus in this section is on the processing effort of the words/phrases that 
 
 However, as already discussed in \sectref{nitzke:sec:ScreenRecordings}, there was less research in MPE than in bilingual post-editing and translation from scratch. Conclusively, some of the words/phrases were not researched in MPE and will be excluded as well. Finally, one word had to be excluded due to technical problems in the eye-tracking data (see \tabref{nitzke:tab:2} for the amount of remaining words per text). 
 
-\begin{table}
+\begin{table}[b]
 \begin{tabular}{lrrrrrr} & Text 1 & Text 2 & Text 3 & Text 4 & Text 5 & Text 6\\
 \lsptoprule
 No. Words/Phrases & 0 & 2 & 3 & 1 & 3 & 2\\
@@ -324,27 +329,33 @@ Dur and GazeT include all instances in which the target word/phrase was produced
 
 % split table
 % part 1
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
 \begin{table}
-\begin{tabularx}{\textwidth}{lXXXXX}
+\begin{tabularx}{\textwidth}{lR{1cm}XR{1cm}XR{1cm}X}
 \lsptoprule
 Words/phrases & 
 % \rotatehead{Total amount of sessions (MPE sessions)} & 
-\rotatehead[2.2cm]{\mbox{Sessions} \mbox{(MPE sessions)}} & 
+\rotatehead[2.2cm]{\mbox{Sessions} \mbox{(MPE sessions)}} &&
 % \rotatehead{Total amount of sessions with research on the word/phrase} &
-\rotatehead[2.2cm]{\mbox{Sessions with} \mbox{research on the } \mbox{word/phrase}} &
+\rotatehead[2.2cm]{\mbox{Sessions with} \mbox{research on the } \mbox{word/phrase}} &&
 % \rotatehead{Total amount of sessions with no research} & 
-\rotatehead[2.2cm]{\mbox{Sessions with} \mbox{no research}}\\[.3em]        
+\rotatehead[2.2cm]{\mbox{Sessions with} \mbox{no research}} &\\[.3em]        
 \midrule
-below-inflation & 20 (7) & 5 & 15 \\
-cut interest rates & 20 (7) & 7 & 13 \\
-rattle & 21 (7) & 11 & 10 \\
-halt & 21 (7) & 5 & 16 \\
-Khartoum & 21 (7) & 6 & 15 \\
-incentives & 22 (7) & 10 & 12 \\
-associate & 21 (8) & 10 & 11 \\
-exposure & 21 (8) & 9 & 12 \\
-bureaucrats & 21 (7) & 9 & 12 \\
-full-time leader & 21 (7) & 8 & 13 \\
+below-inflation 		& 20 (7) && 5 && 15 &\\
+cut interest rates 	& 20 (7) && 7 && 13 & \\
+rattle 			& 21 (7) && 11 && 10 &\\
+halt			& 21 (7) && 5 && 16 &\\
+Khartoum 		& 21 (7) && 6 && 15& \\
+incentives 		& 22 (7) && 10 && 12& \\
+associate 		& 21 (8) && 10 && 11& \\
+exposure 		& 21 (8) && 9 && 12& \\
+bureaucrats 		& 21 (7) && 9 && 12& \\
+full-time leader 	& 21 (7) && 8 && 13& \\
 \lspbottomrule
 \end{tabularx}
 \caption{Occurrences of the most researched words/phrases in the complete dataset and in MPE}
@@ -353,26 +364,26 @@ full-time leader & 21 (7) & 8 & 13 \\
 
 % part2
 \begin{table}
-\begin{tabularx}{\textwidth}{lXXXXX}
+\begin{tabularx}{\textwidth}{lR{1cm}XR{1cm}XR{1cm}X}
 \lsptoprule
 Words/phrases & 
 % \rotatehead{Total amount of sessions (MPE sessions)} & 
-\rotatehead[2.2cm]{\mbox{Sessions} \mbox{(MPE sessions)}} & 
+\rotatehead[2.2cm]{\mbox{Sessions} \mbox{(MPE sessions)}} && 
 % \rotatehead{Total amount of sessions with research in MPE (n)} & 
-\rotatehead[2.2cm]{\mbox{Sessions with} \mbox{research in} \mbox{MPE (n)}} & 
+\rotatehead[2.2cm]{\mbox{Sessions with} \mbox{research in} \mbox{MPE (n)}} && 
 % \rotatehead{Total amount of sessions with no research in MPE}\\
 \rotatehead[2.2cm]{\mbox{Sessions with} \mbox{no research } \mbox{in MPE}}\\[.5em]
 \midrule
-below-inflation & 20 (7) & 1 & 6\\
-cut interest rates & 20 (7) & 2 & 5\\
-rattle & 21 (7) & 2 & 5\\
-halt & 21 (7) & 1 & 6\\
-Khartoum & 21 (7) & 1 & 6\\
-incentives & 22 (7) & 2 & 5\\
-associate & 21 (8) & 2 & 6\\
-exposure & 21 (8) & 4 & 4\\
-bureaucrats & 21 (7) & 4 & 3\\
-full-time leader & 21 (7) & 2 & 5\\
+below-inflation & 20 (7) && 1 && 6&\\
+cut interest rates & 20 (7) && 2 && 5&\\
+rattle & 21 (7) && 2 && 5&\\
+halt & 21 (7) && 1 && 6&\\
+Khartoum & 21 (7) && 1 && 6&\\
+incentives & 22 (7) && 2 &&5&\\
+associate & 21 (8) && 2 && 6&\\
+exposure & 21 (8) && 4 && 4&\\
+bureaucrats & 21 (7) && 4 && 3&\\
+full-time leader & 21 (7) && 2 && 5&\\
 \lspbottomrule
 \end{tabularx}
 \caption{Occurrences of the most researched words/phrases in the complete dataset and in MPE}
@@ -408,25 +419,26 @@ The mean values for Dur (\tabref{nitzke:tab:4}) and GazeT (\tabref{nitzke:tab:5}
 % \label{nitzke:tab:4}
 % \end{table}
 
+\newcolumntype{d}[1]{D{.}{.}{#1}}
 \begin{table}
-\begin{tabularx}{\textwidth}{lXXXX}
+\begin{tabularx}{\textwidth}{lXd{5.1}Xd{5.1}Xd{5.1}Xd{5.1}X}
 \lsptoprule
-Dur &
-\rotatehead[2cm]{\mbox{All} \mbox{research}} & 
-\rotatehead[2cm]{\mbox{All} \mbox{non-research}} & 
-\rotatehead[2cm]{\mbox{MPE } \mbox{research}} & 
-\rotatehead[2cm]{\mbox{MPE} \mbox{non-research}} \\
+Dur &&
+ \parbox{1cm}{All\newline research} &&  
+ \parbox{1.5cm}{All\newline \mbox{non-research}} && 
+ \parbox{1cm}{MPE\newline research} && 
+ \parbox{1.7cm}{MPE\newline \mbox{non-research}} \\          
 \midrule
-below-inflation & 7369.2  & 5114.9  & 8533  & 3737.3  \\ 
-cut interest rates & 8622.6  &  1400.8  &  1069  &  1227  \\ 
-rattle & 10796.5  &  2817.7  &  5070.5  &  3975  \\ 
-halt & 10421.2  &  940.9  &  42869  &  235.5  \\ 
-Khartoum & 13478.8  &  3330.8  &  14291  &  215 \\ 
-incentives & 2756.8  &  5712.2  &  4867  &  2851  \\ 
-associate & 1753.5  &  777.6  &  876  &  383  \\ 
-exposure & 9798.3  &  193.8  &  24008.5  &  0  \\ 
-bureaucrats & 1015.7  &  1281.6  &  1336.3  &  0  \\ 
-full-time leader & 20733.8 &  3884.3 &  2160.5  &  2764.2  \\ 
+below-inflation && 7369.2  && 5114.9  && 8533  && 3737.3  \\ 
+cut interest rates && 8622.6  &&  1400.8  &&  1069  &&  1227  \\ 
+rattle && 10796.5  &&  2817.7  &&  5070.5  &&  3975  \\ 
+halt && 10421.2  &&  940.9  &&  42869  &&  235.5  \\ 
+Khartoum && 13478.8  &&  3330.8  &&  14291  &&  215 \\ 
+incentives && 2756.8  &&  5712.2  &&  4867  &&  2851  \\ 
+associate && 1753.5  &&  777.6  &&  876  &&  383  \\ 
+exposure && 9798.3  &&  193.8  &&  24008.5  &&  0  \\ 
+bureaucrats && 1015.7  &&  1281.6  &&  1336.3  &&  0  \\ 
+full-time leader && 20733.8 &&  3884.3 &&  2160.5  &&  2764.2  \\ 
 \lspbottomrule
 \end{tabularx}
 \caption{Mean Dur for the particular word/phrase for all research instances, all non-research instances, MPE research, and MPE non-research}
@@ -464,25 +476,24 @@ In six out of ten instances, the mean for the production of the word/phrase is h
 % \end{table}
 
 \begin{table}
-\begin{tabularx}{\textwidth}{lXXXX}
+\begin{tabularx}{\textwidth}{lXd{5.1}Xd{5.1}Xd{5.1}Xd{5.1}X}
 \lsptoprule
-
-GazeT &
-\rotatehead[1.5cm]{All research} &
-\rotatehead[1.5cm]{All \mbox{non-research}} &
-\rotatehead[1.5cm]{MPE research} &
-\rotatehead[1.5cm]{MPE \mbox{non-research}} \\       
+Dur &&
+ \parbox{1cm}{All\newline research} &&  
+ \parbox{1.5cm}{All\newline \mbox{non-research}} && 
+ \parbox{1cm}{MPE\newline research} && 
+ \parbox{1.7cm}{MPE\newline \mbox{non-research}} \\          
 \midrule
-below-inflation & 2671.6  & 10123  & 2160  & 8775.7  \\ 
-cut interest rates & 7395.9  &  5431.9  &  3797.5  & 3659  \\ 
-rattle & 14353.5  &  4764.1  &  1455  &  1083.8  \\ 
-halt & 7217.6  &  2052.5  &  1325  &  1657.5  \\ 
-Khartoum & 2330.5  &  1329.6  &  1634  &  158.3  \\ 
-incentives & 2484  &  4388.3  &  406.5  &  1398.2  \\ 
-associate & 1578.1  &  2256.5  &  3221.5  &  1706.7  \\ 
-exposure & 2759.3  &  2943.2  &  1067.5  &  424.8  \\ 
-bureaucrats & 11018.7  &  5249.2  &  14563  &  6288.7  \\ 
-full-time leader & 6062.9 &  7167.8 &  3178 &  7814.4  \\ 
+below-inflation && 2671.6  && 10123  && 2160  && 8775.7  \\ 
+cut interest rates && 7395.9  &&  5431.9  &&  3797.5  && 3659  \\ 
+rattle && 14353.5  &&  4764.1  &&  1455  &&  1083.8  \\ 
+halt && 7217.6  &&  2052.5  &&  1325  &&  1657.5  \\ 
+Khartoum && 2330.5  &&  1329.6  &&  1634  &&  158.3  \\ 
+incentives && 2484  &&  4388.3  &&  406.5  &&  1398.2  \\ 
+associate && 1578.1  &&  2256.5  &&  3221.5  &&  1706.7  \\ 
+exposure && 2759.3  &&  2943.2  &&  1067.5  &&  424.8  \\ 
+bureaucrats && 11018.7  &&  5249.2  &&  14563  &&  6288.7  \\ 
+full-time leader && 6062.9 &&  7167.8 &&  3178 &&  7814.4  \\ 
 \lspbottomrule
 \end{tabularx}
 \caption{Mean GazeT for the particular word/phrase for all research instances, all non-research instances, MPE research, and MPE research}
