@@ -1572,7 +1572,7 @@ is, or will remain, accurate or appropriate.
 \renewcommand{\@pnumwidth}{1.5em}	% width of page numbers
 \usepackage{tocstyle}
 \usetocstyle{standard}				%\usetocstyle{allwithdot}
-% \settocfeature[toc]{raggedhook}{\raggedright} %
+\settocfeature[toc]{raggedhook}{\raggedright} %
 
 \iflsCollectionTOCLong\else
 	\setcounter{tocdepth}{0}\fi			% show only parts and chapters
