@@ -58,11 +58,11 @@ I will use this broader definition as a basis in order to develop the design of 
 	ylabel={\%},
 	y=0.5mm,
 	ymin=0,
-	symbolic x coords={yes, no, do not visit},
+	symbolic x coords={Yes, No, Do not visit},
 	xtick=data,
 	x tick label style={}, 
 	]
-	\addplot[ybar,lsRichGreen!80!black,fill=lsRichGreen] plot coordinates {(yes\vphantom{t},49) (no\vphantom{t},43) (do not visit,8)};
+	\addplot[ybar,lsRichGreen!80!black,fill=lsRichGreen] plot coordinates {(Yes,49) (No,43) (Do not visit,8)};
     \end{axis} 
 
 \end{tikzpicture}
@@ -95,7 +95,7 @@ From the 92\% of the web users who do use online shops, more than 50\% consider 
 Possible answers were ``I use this'', ``I plan to use this'' and ``Not planned''. The survey was conducted by ibi research University Regensburg GmbH. 
 
 \begin{figure} 
- \includegraphics[width=\textwidth]{figures/Roesener2.png}
+%  \includegraphics[width=\textwidth]{figures/Roesener2.png}
 
 \begin{tikzpicture} 
 \begin{axis}[ title=\parbox{.7\textwidth}{
@@ -285,7 +285,8 @@ Of course, several layouts for usability laboratories are possible. For example,
 
 \begin{figure}
  \includegraphics[width=\textwidth]{figures/Roesener6.pdf}
- \caption{Floor plan for a hypothetical usability laboratory \citep[201]{nielsen1993}}
+ \caption{Floor plan for a hypothetical usability laboratory (adapted from \citealt[201]{nielsen1993})}
+\todo[inline]{Graphic redrawn and caption adapted. Please check}
  \label{roesener:fig:6}
 \end{figure} 
 
