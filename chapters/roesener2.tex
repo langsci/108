@@ -47,9 +47,11 @@ I will use this broader definition as a basis in order to develop the design of 
 %  \includegraphics[width=\textwidth]{figures/Roesener1.png}
 \begin{tikzpicture}
     \begin{axis}[
+      title=\parbox{.7\textwidth}{\footnotesize
+		  Haben Sie schon einmal einen Online-Shop verlassen, weil Ihnen die Benutzerführung zu kompliziert war? (Source: TNS Emnid 2014)}, 
 	axis lines*=left,
 % 	ybar stacked,
-	    bar width=15pt,
+	    bar width=50pt,
     	nodes near coords,
 	enlargelimits=0.15,
         ymajorgrids = true,
@@ -58,20 +60,20 @@ I will use this broader definition as a basis in order to develop the design of 
 	ylabel={\%},
 	y=0.5mm,
 	ymin=0,
-	symbolic x coords={Yes, No, Do not visit},
+	width=10cm,
+% 	symbolic x coords={Ja, Nein, Besuche keine Online-Shops},
 	xtick=data,
-	x tick label style={}, 
+	xticklabels = {\parbox{1cm}{\centering Ja}, \parbox{1cm}{\centering Nein}, \parbox{2.5cm}{Besuche keine\\ Online-Shops}},
+	xticklabel style={align=right},  
 	]
-	\addplot[ybar,lsRichGreen!80!black,fill=lsRichGreen] plot coordinates {(Yes,49) (No,43) (Do not visit,8)};
+	\addplot[ybar,lsDarkBlue!80!black,fill=lsMidBlue] plot coordinates {(1,49) (2,43) (3,8)};
     \end{axis} 
 
 \end{tikzpicture}
+ 
 
-\todo[inline]{add correct values}
-\todo[inline]{check caption }
-
-
- \caption{Usability of online shops (Source: TNS Emnid 2014). Values indicate how many users have ever left an online shop because of poor usability.}
+%  \caption{Usability of online shops (Source: TNS Emnid 2014). Values indicate how many users have ever left an online shop because of poor usability.}
+ \caption{Haben Sie schon einmal einen Online-Shop verlassen, weil Ihnen die Benutzerführung zu kompliziert war? (Source: TNS Emnid 2014)}
  \label{roesener:fig:1}
 \end{figure} 
  
@@ -94,60 +96,72 @@ From the 92\% of the web users who do use online shops, more than 50\% consider 
 
 Possible answers were ``I use this'', ``I plan to use this'' and ``Not planned''. The survey was conducted by ibi research University Regensburg GmbH. 
 
-\begin{figure} 
+\begin{figure}[t]
 %  \includegraphics[width=\textwidth]{figures/Roesener2.png}
 
 \begin{tikzpicture} 
-\begin{axis}[ title=\parbox{.7\textwidth}{
+\begin{axis}[ title=\parbox{.7\textwidth}{\footnotesize
 		  Welches der folgenden kundenbezogenen Instrumente setzen 
 		  Sie  ein oder planen Sie einzusetzen, um den Absatz Ihres 
 		  Online-Shops zu vergrößern?}, 
 	xbar, 
         xmajorgrids = true,
-        width  = .8\textwidth,
+        width  = .82\textwidth,
 	height= 9.5cm, 
 	reverse legend,
-	y tick label style={font=\small,text width=3cm,align=left},
+	y tick label style={font=\footnotesize,text width=3cm,align=left},
 % enlarge y limits=0.5, 
 	xlabel={\%}, 
-	symbolic y coords={Usability-Evaluierung durch externe Anbieter,Zertifizierung durch einen Anbieter eines Gütesiegels,Kundenbefragung zur Identifizierung von Verbesserungs\-möglichkeiten,Analyse des Nutzerverhaltens zur Identifizierung von Optimierungen}, ytick=data, nodes near coords, nodes near coords align={horizontal}, ]
+	symbolic y coords={
+	Usability-Evaluierung durch externe Anbie\-ter,
+	Zertifizierung durch einen Anbieter eines Gütesiegels,
+	Kundenbefragung zur Identifizierung von Verbesserungs\-möglichkeiten,
+	Analyse des Nutzerverhaltens zur Identifizierung von Optimierungen
+	},
+	ytick=data, nodes near coords, nodes near coords align={horizontal}, ]
 
-	\addplot[style={lsNightGreen,
-		      fill=lsNightGreen}
-		] coordinates {
-		    (32,Analyse des Nutzerverhaltens zur Identifizierung von Optimierungen) 
-		    (32,Kundenbefragung zur Identifizierung von Verbesserungs\-möglichkeiten) 
-		    (36,Zertifizierung durch einen Anbieter eines Gütesiegels) 
-		    (78,Usability-Evaluierung durch externe Anbieter)
-	}; 
-	\addlegendentry{not projected};
-
-	\addplot[style={lsRichGreen,
-			fill=lsRichGreen}
-		] coordinates {
-		    (38,Analyse des Nutzerverhaltens zur Identifizierung von Optimierungen)
-		    (47,Kundenbefragung zur Identifizierung von Verbesserungs\-möglichkeiten)
-		    (46,Zertifizierung durch einen Anbieter eines Gütesiegels) 
-		    (14,Usability-Evaluierung durch externe Anbieter)
-	}; 
-	\addlegendentry{projected};
-	\addplot[style={lsLightGreen,fill=lsLightGreen}
+	
+	\addplot[style={lsDarkBlue,fill=lsDarkBlue}
 		] coordinates {
 		    (30,Analyse des Nutzerverhaltens zur Identifizierung von Optimierungen)
 		    (21,Kundenbefragung zur Identifizierung von Verbesserungs\-möglichkeiten) 
 		    (19,Zertifizierung durch einen Anbieter eines Gütesiegels) 
-		    (8,Usability-Evaluierung durch externe Anbieter)
+		    (8,Usability-Evaluierung durch externe Anbie\-ter)
 	};  
-	\addlegendentry{using};
+	\addlegendentry{Setze ich ein};
+	
+	
+
+	\addplot[style={lsNightBlue,
+			fill=lsNightBlue}
+		] coordinates {
+		    (38,Analyse des Nutzerverhaltens zur Identifizierung von Optimierungen)
+		    (47,Kundenbefragung zur Identifizierung von Verbesserungs\-möglichkeiten)
+		    (46,Zertifizierung durch einen Anbieter eines Gütesiegels) 
+		    (14,Usability-Evaluierung durch externe Anbie\-ter)
+	}; 
+	\addlegendentry{Plane ich einzusetzen};
+	
+	
+	\addplot[style={lsLightBlue,
+		      fill=lsLightBlue}
+		] coordinates {
+		    (32,Analyse des Nutzerverhaltens zur Identifizierung von Optimierungen) 
+		    (32,Kundenbefragung zur Identifizierung von Verbesserungs\-möglichkeiten) 
+		    (36,Zertifizierung durch einen Anbieter eines Gütesiegels) 
+		    (78,Usability-Evaluierung durch externe Anbie\-ter)
+	}; 
+	\addlegendentry{Nicht geplant};
+	
+	
 \end{axis} 
 \end{tikzpicture}
 
+   
   
-\todo[inline]{translate labels}
- 
-
-\todo[inline]{add correct values}
- \caption{Instruments to improve the sales of online shops (Source: ibi research University Regensburg GmbH 2014)}
+ \caption{Welches der folgenden kundenbezogenen Instrumente setzen 
+		  Sie  ein oder planen Sie einzusetzen, um den Absatz Ihres 
+		  Online-Shops zu vergrößern? (Source: ibi research University Regensburg GmbH 2014)}
  \label{roesener:fig:2}
 \end{figure} 
 
