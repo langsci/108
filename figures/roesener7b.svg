@@ -15,7 +15,7 @@
    inkscape:version="0.48.3.1 r9886"
    width="628"
    height="473"
-   sodipodi:docname="roesener7b.pdf">
+   sodipodi:docname="roesener7b.svg">
   <metadata
      id="metadata3209">
     <rdf:RDF>
@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -43,9 +43,9 @@
      inkscape:window-height="1022"
      id="namedview3205"
      showgrid="false"
-     inkscape:zoom="1.7248613"
-     inkscape:cx="139.17812"
-     inkscape:cy="330.07194"
+     inkscape:zoom="0.74536243"
+     inkscape:cx="647.08643"
+     inkscape:cy="57.277795"
      inkscape:window-x="1680"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -87,25 +87,25 @@
   <text
      xml:space="preserve"
      style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
-     x="446.41272"
-     y="387.77576"
+     x="445.57419"
+     y="315.9986"
      id="text3213"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3215"
-       x="446.41272"
-       y="387.77576">Regieraum</tspan></text>
+       x="445.57419"
+       y="315.9986" /></text>
   <text
      xml:space="preserve"
-     style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
-     x="82.90522"
-     y="377.91989"
+     style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+     x="56.74345"
+     y="379.93234"
      id="text3217"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3219"
-       x="82.90522"
-       y="377.91989">Usability-Labor</tspan></text>
+       x="56.74345"
+       y="379.93234">Usability-Labor</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
@@ -622,4 +622,57 @@
        id="tspan5855"
        x="428.58521"
        y="262.83817">DS</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+     x="83.348717"
+     y="334.97992"
+     id="text3271"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3273"
+       x="83.348717"
+       y="334.97992">V 1.18</tspan><tspan
+       sodipodi:role="line"
+       x="83.348717"
+       y="357.47992"
+       id="tspan3276">23,32 m²</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+     x="453.63837"
+     y="275.78052"
+     id="text3278"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3280"
+       x="453.63837"
+       y="275.78052">   V 1.17</tspan><tspan
+       sodipodi:role="line"
+       x="453.63837"
+       y="298.28052"
+       id="tspan3282">11,20 m²</tspan><tspan
+       sodipodi:role="line"
+       x="453.63837"
+       y="320.78052"
+       id="tspan3296">Regieraum</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+     x="509.14828"
+     y="84.598343"
+     id="text3284"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       id="tspan3286"
+       x="509.14828"
+       y="84.598343">V 1.29</tspan><tspan
+       sodipodi:role="line"
+       x="509.14828"
+       y="107.09834"
+       id="tspan3288">   Flur</tspan><tspan
+       sodipodi:role="line"
+       x="509.14828"
+       y="129.59834"
+       id="tspan3290">79,26 m²</tspan></text>
 </svg>
