@@ -15,6 +15,7 @@
  	        ,biblatex  
 		,nonflat
 		,modfonts
+		,draft
 % 	        ,coverus
 		  ]{langsci/langscibook}                              
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -31,9 +32,7 @@
 % \bibliography{localbibliography}
 % new bibliography
 %\bibliography{Literaturangaben_raw.bib}
-\bibliography{sorted.bib}
-% TODO: include sorted.bib when normalizebib.py runs without errors (\biberror)
-% \bibliography{sorted.bib}
+\bibliography{sorted.bib} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%                                              %%%
@@ -41,7 +40,6 @@
 %%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}         
-
 \maketitle                
 \frontmatter 
  
@@ -63,16 +61,33 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%             Chapters                         %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
-% \includepaper{chapters/intro} \writechapterpages
-%  \includepaper{chapters/fox2}  \writechapterpages
-%  \includepaper{chapters/ohagan_sasamoto2} \writechapterpages
-%  \includepaper{chapters/lang2} \writechapterpages
-%  \includepaper{chapters/nitzke2} \writechapterpages
-%  \includepaper{chapters/alves_et_al2} \writechapterpages
-\includepaper{chapters/roesener2} \writechapterpages
-%  \includepaper{chapters/wolfer2} \writechapterpages
+\newcommand{\chapterpath}{indexed} % (chapters\indexed)
+\includepaper{\chapterpath/intro} \writechapterpages
+\includepaper{\chapterpath/fox2}  \writechapterpages
+\includepaper{\chapterpath/ohagan_sasamoto2} \writechapterpages
+\includepaper{\chapterpath/lang2} \writechapterpages
+\includepaper{\chapterpath/nitzke2} \writechapterpages
+\includepaper{\chapterpath/alves_et_al2} \writechapterpages
+\includepaper{\chapterpath/roesener2} \writechapterpages
+\includepaper{\chapterpath/wolfer2} \writechapterpages
 
 \backmatter
+ 
+% verschachtelte Indexterme
+\is{translation!machine translation}
+% Querverweise ohne eigenen Eintrag (see X)
+\is{translating| see {translation}}
+% Querverweise nach eigenem Eintrag (see also Y)
+\issa{effectiveness}{processing effort}
 
+
+%neue Befehle, um verschachtelte Terme einfach unterzubringen
+%und das Wort dann auch noch gleich unverschachtelt in den Text zu schreiben
+\newcommand{\interactivepostediting}{\is{post-editing!interactive}interactive post-editing}
+
+%test für Befehl. Bitte löschen, wenn verstanden!
+{\interactivepostediting}
+
+% \include{localseealso}
 \include{backmatter}
 \end{document}
