@@ -1,13 +1,10 @@
-Eyetracking
-eyetracking
-Applied Linguistics
-applied linguistics
+eye-tracking
 Natural language processing 
 natural language processing 
 NLP
 Cognitive science
 Computational linguistics
-Empirical research
+empirical research
 ​audiovisual translation
 captions
 CASMACAT
@@ -15,9 +12,8 @@ cognitive effort
 comprehensibility
 computer-aided translation
 conceptual encoding
-corpus
-corpora
-CRITT
+corpus 
+CRITT-TPR
 effectiveness
 efficiency
 encoding
@@ -51,8 +47,7 @@ subtitling
 text quality
 target text quality
 translation process
-usability
-usability lab
+usability 
 usability laboratory
 visual attention
 attention split
