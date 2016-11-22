@@ -600,7 +600,8 @@
     \setlength{\bleed}{3.175mm}
     \setlength{\seitenbreite}{169.9mm}
     \setlength{\seitenhoehe}{244.1mm} 	
-    \setlength{\spinewidth}{40mm} % Create Space Version
+    \setlength{\csspine}{11.3829592mm}
+    \setlength{\spinewidth}{\csspine} % Create Space Version
     
     \usepackage{calc}
 
@@ -788,8 +789,8 @@
     \renewcommand{\newlineCover}{}
     \renewcommand{\newlineSpine}{}  
     \renewcommand{\lsEditorPrefix}{{\Large Edited by\\}}
-    \renewcommand{\lsEditorSuffix}{(ed.)}
-    \IfSubStr{\@author}{Press}   % if \@author contains \&
+    \renewcommand{\lsEditorSuffix}{(eds.)}
+    \IfSubStr{\@author}{\&}   % if \@author contains \&
       %case true
       {\renewcommand{\lsEditorSuffix}{(eds.)}}
       %case false
